@@ -1,0 +1,75 @@
+<drawingAnimations>
+ <drawingAnimation spritesheet="sheet_Top" name="OffWeGo_v3_Top">
+  <drawing node="King_group_eye_1" name="24-eye_1" drwId="1">
+   <drw skinId="0" frame="1" repeat="16" name="24-eye_1-1.png"/>
+   <drw skinId="0" frame="17" repeat="28" name="24-eye_1-2.png"/>
+  </drawing>
+  <drawing node="King_group_pupil" name="25-pupil" drwId="2">
+   <drw skinId="0" frame="1" repeat="44" name="25-pupil-1.png"/>
+  </drawing>
+  <drawing node="King_group_eye" name="23-eye" drwId="3">
+   <drw skinId="0" frame="1" repeat="16" name="23-eye-1.png"/>
+   <drw skinId="0" frame="17" repeat="28" name="23-eye-2.png"/>
+  </drawing>
+  <drawing node="King_group_pupil_1" name="26-pupil_1" drwId="4">
+   <drw skinId="0" frame="1" repeat="44" name="26-pupil_1-1.png"/>
+  </drawing>
+  <drawing node="King_group_Eyebrown_1" name="29-Eyebrown_1" drwId="5">
+   <drw skinId="0" frame="1" repeat="44" name="29-Eyebrown_1-1.png"/>
+  </drawing>
+  <drawing node="King_group_Eyebrown" name="28-Eyebrown" drwId="6">
+   <drw skinId="0" frame="1" repeat="44" name="28-Eyebrown-1.png"/>
+  </drawing>
+  <drawing node="King_group_nose" name="60-nose" drwId="7">
+   <drw skinId="0" frame="1" repeat="44" name="60-nose-1.png"/>
+  </drawing>
+  <drawing node="King_group_Mouth" name="27-Mouth" drwId="8">
+   <drw skinId="0" frame="1" repeat="12" name="27-Mouth-5.png"/>
+   <drw skinId="0" frame="13" repeat="3" name="27-Mouth-3.png"/>
+   <drw skinId="0" frame="16" repeat="4" name="27-Mouth-4.png"/>
+   <drw skinId="0" frame="20" repeat="3" name="27-Mouth-2.png"/>
+   <drw skinId="0" frame="23" repeat="3" name="27-Mouth-5.png"/>
+   <drw skinId="0" frame="26" repeat="14" name="27-Mouth-3.png"/>
+   <drw skinId="0" frame="40" repeat="5" name="27-Mouth-1.png"/>
+  </drawing>
+  <drawing node="King_group_Hand_2" name="35-Hand_2" drwId="9">
+   <drw skinId="0" frame="1" repeat="44" name="35-Hand_2-1.png"/>
+  </drawing>
+  <drawing node="King_group_Arm" name="20-Arm" drwId="10">
+   <drw skinId="0" frame="1" repeat="44" name="20-Arm-1.png"/>
+  </drawing>
+  <drawing node="King_group_Hair" name="32-Hair" drwId="11">
+   <drw skinId="0" frame="1" repeat="44" name="32-Hair-1.png"/>
+  </drawing>
+  <drawing node="King_group_Hair_1" name="33-Hair_1" drwId="12">
+   <drw skinId="0" frame="1" repeat="44" name="33-Hair_1-1.png"/>
+  </drawing>
+  <drawing node="King_group_Body" name="19-Body" drwId="13">
+   <drw skinId="0" frame="1" repeat="44" name="19-Body-1.png"/>
+  </drawing>
+  <drawing node="King_group_Leg" name="17-Leg" drwId="14">
+   <drw skinId="0" frame="1" repeat="44" name="17-Leg-1.png"/>
+  </drawing>
+  <drawing node="King_group_Leg_1" name="18-Leg_1" drwId="15">
+   <drw skinId="0" frame="1" repeat="44" name="18-Leg_1-1.png"/>
+  </drawing>
+  <drawing node="King_group_Crown" name="31-Crown" drwId="16">
+   <drw skinId="0" frame="1" repeat="44" name="31-Crown-1.png"/>
+  </drawing>
+  <drawing node="King_group_Hand" name="30-Hand" drwId="17">
+   <drw skinId="0" frame="1" repeat="19" name="30-Hand-1.png"/>
+   <drw skinId="0" frame="20" repeat="25" name="30-Hand-2.png"/>
+  </drawing>
+  <drawing node="King_group_Arm_1" name="21-Arm_1" drwId="18">
+   <drw skinId="0" frame="1" repeat="22" name="21-Arm_1-1.png"/>
+   <drw skinId="0" frame="23" repeat="3" name="21-Arm_1-2.png"/>
+   <drw skinId="0" frame="26" repeat="19" name="21-Arm_1-1.png"/>
+  </drawing>
+  <drawing node="King_group_capa" name="22-capa" drwId="19">
+   <drw skinId="0" frame="1" repeat="44" name="22-capa-1.png"/>
+  </drawing>
+  <drawing node="King_group_Shadow_1" name="57-Shadow" drwId="20">
+   <drw skinId="0" frame="1" repeat="44" name="57-Shadow-1.png"/>
+  </drawing>
+ </drawingAnimation>
+</drawingAnimations>

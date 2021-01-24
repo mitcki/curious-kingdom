@@ -9,8 +9,13 @@ public class DragAndDrop : MonoBehaviour
     bool canMove;
     bool dragging;
     bool touchingBasket;
+    bool placed;
     Vector3 startPosition;
+    Vector3 lerpStartPosition;
+    float arrivalDistance, wait;
     float speed = 10;
+    float lerpTime = 0.25f;
+    float currentLerpTime;
     public int pickleCount = 0;
     public TextMeshProUGUI resultDisplay;
     public TextMeshProUGUI neededPickles;
@@ -19,6 +24,7 @@ public class DragAndDrop : MonoBehaviour
     {
         canMove = false;
         dragging = false;
+        placed = false;
         startPosition = transform.position; 
         resultDisplay = GameObject.Find("Canvas").transform.Find("resultDisplay").GetComponent<TextMeshProUGUI>();
         neededPickles = GameObject.Find("Canvas").transform.Find("neededPickles").GetComponent<TextMeshProUGUI>();
@@ -56,14 +62,24 @@ public class DragAndDrop : MonoBehaviour
         }
         if(touchingBasket){
                 dragging = false;
-                gameObject.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                Vector3 newLoc;
-                if(GameStatus.dropCount == 1){
-                    newLoc = GameObject.Find("basket-front").transform.position;
-                } else {
-                    newLoc = GameObject.Find("basket-front").transform.position;
+                if(placed == false){
+                    gameObject.GetComponent<SpriteRenderer>().sortingOrder = 1;
+                    Vector3 newLoc;
+                    if(GameStatus.dropCount == 1){
+                        newLoc = GameObject.Find("basket-front").transform.position;
+                        newLoc.y += 0.5f;
+                        newLoc.x -= 0.5f;
+                    } else {
+                        newLoc = GameObject.Find("basket-front").transform.position;
+                        newLoc.y += 0.5f;
+                        newLoc.x += 0.5f;
+                    }
+                    // this.transform.position = Vector3.Lerp(this.transform.position,  newLoc, Time.deltaTime * speed);
+                    lerpStartPosition = this.transform.position;
+                    currentLerpTime = 0;
+                     StartCoroutine( GoTo(newLoc) );
+                    placed = true;
                 }
-                this.transform.position = Vector3.Lerp(this.transform.position,  newLoc, Time.deltaTime * speed);
 
         } else if (dragging)
         {
@@ -80,6 +96,25 @@ public class DragAndDrop : MonoBehaviour
 
         }
 
+    }
+    IEnumerator GoTo( Vector3 dest )
+    {
+        // Check the sqMag to spare a Sqrt
+        while( (dest - transform.position).sqrMagnitude > arrivalDistance )
+        {
+            // transform.position = Vector3.Lerp(transform.position, dest, Time.deltaTime * speed);
+            currentLerpTime += Time.deltaTime;
+            if (currentLerpTime > lerpTime) {
+                currentLerpTime = lerpTime;
+            }
+    
+            //lerp!
+            // float perc = currentLerpTime / lerpTime;
+            float t = currentLerpTime / lerpTime;
+            t = t*t * (3f - 2f*t);
+            transform.position = Vector3.Lerp(lerpStartPosition, dest, t);
+            yield return null;
+        }
     }
     private void OnCollisionEnter2D(Collision2D other) {
         if(other.gameObject.name == "basket-front"){

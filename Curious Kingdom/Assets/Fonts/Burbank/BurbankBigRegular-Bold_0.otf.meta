@@ -1,0 +1,25 @@
+fileFormatVersion: 2
+guid: 5e5851eeb4bfa1e40a3463ce6391d7e8
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Burbank Big Regular
+  fontNames:
+  - Burbank Big Regular
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 783c28d94e3c939409d0df75141cc69c, type: 3}
+  - {fileID: 12800000, guid: a1105d5ef93ea0d47aa2dc807c1d648d, type: 3}
+  - {fileID: 12800000, guid: 28d5248e6c4c41f4d80ea5fef7b1d6fd, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

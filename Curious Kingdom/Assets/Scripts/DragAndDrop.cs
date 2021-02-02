@@ -8,7 +8,7 @@ public class DragAndDrop : MonoBehaviour
 {
     bool canMove;
     bool dragging;
-    bool touchingBasket;
+    public bool touchingBasket;
     bool placed;
     Vector3 startPosition;
     Vector3 lerpStartPosition;
@@ -29,11 +29,8 @@ public class DragAndDrop : MonoBehaviour
         resultDisplay = GameObject.Find("Canvas").transform.Find("resultDisplay").GetComponent<TextMeshProUGUI>();
         neededPickles = GameObject.Find("Canvas").transform.Find("neededPickles").GetComponent<TextMeshProUGUI>();
 
-        // picklesNeededCount = Random.Range(3, 9);
-
-        neededPickles.text = GameStatus.picklesNeededCount.ToString();
-
-        resultDisplay.text = "? + ? = " + GameStatus.picklesNeededCount.ToString();
+        
+        
     }
 
     // Update is called once per frame
@@ -61,26 +58,8 @@ public class DragAndDrop : MonoBehaviour
             }
         }
         if(touchingBasket){
-                dragging = false;
-                if(placed == false){
-                    gameObject.GetComponent<SpriteRenderer>().sortingOrder = 1;
-                    Vector3 newLoc;
-                    if(GameStatus.dropCount == 1){
-                        newLoc = GameObject.Find("basket-front").transform.position;
-                        newLoc.y += 0.5f;
-                        newLoc.x -= 0.5f;
-                    } else {
-                        newLoc = GameObject.Find("basket-front").transform.position;
-                        newLoc.y += 0.5f;
-                        newLoc.x += 0.5f;
-                    }
-                    // this.transform.position = Vector3.Lerp(this.transform.position,  newLoc, Time.deltaTime * speed);
-                    lerpStartPosition = this.transform.position;
-                    currentLerpTime = 0;
-                     StartCoroutine( GoTo(newLoc) );
-                    placed = true;
-                }
-
+                
+            MoveToBasket();
         } else if (dragging)
         {
             this.transform.position = mousePos;
@@ -96,6 +75,27 @@ public class DragAndDrop : MonoBehaviour
 
         }
 
+    }
+    public void MoveToBasket (){
+        dragging = false;
+        if(placed == false){
+            gameObject.GetComponent<SpriteRenderer>().sortingOrder = 1;
+            Vector3 newLoc;
+            if(GameStatus.dropCount < 2){
+                newLoc = GameObject.Find("basket-front").transform.position;
+                newLoc.y += 0.5f;
+                newLoc.x -= 0.5f;
+            } else {
+                newLoc = GameObject.Find("basket-front").transform.position;
+                newLoc.y += 0.5f;
+                newLoc.x += 0.5f;
+            }
+            // this.transform.position = Vector3.Lerp(this.transform.position,  newLoc, Time.deltaTime * speed);
+            lerpStartPosition = this.transform.position;
+            currentLerpTime = 0;
+                StartCoroutine( GoTo(newLoc) );
+            placed = true;
+        }
     }
     IEnumerator GoTo( Vector3 dest )
     {

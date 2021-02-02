@@ -18,12 +18,25 @@ public class Door : MonoBehaviour
         {
             if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(mousePos))
             {
+                JointMotor2D motor = GetComponent<HingeJoint2D>().motor;
+                motor.motorSpeed *= -1;
+                motor.maxMotorTorque = 10000;
+                GetComponent<HingeJoint2D>().motor = motor;
+                StartCoroutine(activateMotor());
                 GetComponent<HingeJoint2D>().useMotor = false;
+
+
             }
             else
             {
-                GetComponent<HingeJoint2D>().useMotor = true;
+                // GetComponent<HingeJoint2D>().useMotor = true;
             }
         }
+    }
+    IEnumerator activateMotor()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+        GetComponent<HingeJoint2D>().useMotor = true;
     }
 }

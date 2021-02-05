@@ -29,7 +29,8 @@ public class GameStatus : MonoBehaviour
 
         neededPickles.text = GameStatus.picklesNeededCount.ToString();
 
-        resultDisplay.text = "? + ? = " + GameStatus.picklesNeededCount.ToString();
+        // resultDisplay.text = "? + ? = " + GameStatus.picklesNeededCount.ToString();
+        resultDisplay.text = " " ;
 
         StartCoroutine(placeFirstJar());
 

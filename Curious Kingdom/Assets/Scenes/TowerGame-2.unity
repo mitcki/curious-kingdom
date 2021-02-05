@@ -769,7 +769,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &582750812
 Animator:
   serializedVersion: 3
@@ -2116,7 +2116,7 @@ PrefabInstance:
     - target: {fileID: 2494297904726576607, guid: 051bce905a327784e88e43152842f84b,
         type: 3}
       propertyPath: m_Motor.m_MotorSpeed
-      value: 50
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 2494297904726576607, guid: 051bce905a327784e88e43152842f84b,
         type: 3}

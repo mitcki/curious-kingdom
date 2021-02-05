@@ -1869,7 +1869,7 @@ PrefabInstance:
     - target: {fileID: 2494297904726576607, guid: 051bce905a327784e88e43152842f84b,
         type: 3}
       propertyPath: m_Motor.m_MotorSpeed
-      value: 50
+      value: 500
       objectReference: {fileID: 0}
     - target: {fileID: 2494297904726576607, guid: 051bce905a327784e88e43152842f84b,
         type: 3}

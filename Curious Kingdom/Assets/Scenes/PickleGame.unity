@@ -234,6 +234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97f0be91695c452694a3cc1bb018195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  touchingBasket: 0
   pickleCount: 1
   resultDisplay: {fileID: 0}
   neededPickles: {fileID: 0}
@@ -483,6 +484,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97f0be91695c452694a3cc1bb018195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  touchingBasket: 0
   pickleCount: 3
   resultDisplay: {fileID: 0}
   neededPickles: {fileID: 0}
@@ -710,6 +712,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97f0be91695c452694a3cc1bb018195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  touchingBasket: 0
   pickleCount: 4
   resultDisplay: {fileID: 0}
   neededPickles: {fileID: 0}
@@ -1024,6 +1027,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 007b433ab092947bab879697364b71b7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  resultDisplay: {fileID: 0}
+  neededPickles: {fileID: 0}
 --- !u!1 &500110533
 GameObject:
   m_ObjectHideFlags: 0
@@ -1056,6 +1061,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97f0be91695c452694a3cc1bb018195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  touchingBasket: 0
   pickleCount: 7
   resultDisplay: {fileID: 0}
   neededPickles: {fileID: 0}
@@ -1302,6 +1308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97f0be91695c452694a3cc1bb018195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  touchingBasket: 0
   pickleCount: 5
   resultDisplay: {fileID: 0}
   neededPickles: {fileID: 0}
@@ -1448,6 +1455,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97f0be91695c452694a3cc1bb018195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  touchingBasket: 0
   pickleCount: 2
   resultDisplay: {fileID: 0}
   neededPickles: {fileID: 0}
@@ -1728,6 +1736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97f0be91695c452694a3cc1bb018195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  touchingBasket: 0
   pickleCount: 8
   resultDisplay: {fileID: 0}
   neededPickles: {fileID: 0}
@@ -1874,6 +1883,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97f0be91695c452694a3cc1bb018195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  touchingBasket: 0
   pickleCount: 9
   resultDisplay: {fileID: 0}
   neededPickles: {fileID: 0}
@@ -2020,6 +2030,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97f0be91695c452694a3cc1bb018195, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  touchingBasket: 0
   pickleCount: 6
   resultDisplay: {fileID: 0}
   neededPickles: {fileID: 0}

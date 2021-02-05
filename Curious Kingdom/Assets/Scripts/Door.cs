@@ -35,7 +35,7 @@ public class Door : MonoBehaviour
     }
     IEnumerator activateMotor()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.15f);
 
         GetComponent<HingeJoint2D>().useMotor = true;
     }

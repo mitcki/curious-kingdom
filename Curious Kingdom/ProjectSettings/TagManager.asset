@@ -6,6 +6,7 @@ TagManager:
   tags:
   - MainView
   - GoodItem
+  - BadItem
   layers:
   - Default
   - TransparentFX

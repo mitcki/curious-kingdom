@@ -5,19 +5,31 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/PickleGame.unity
     guid: c3fe945bf31a1455485ac24faa79d16a
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-2.unity
     guid: eff0ebf03a4adf941854dd7861b12bd5
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-4.unity
     guid: 8136a84180325794bad06aaf35b82d51
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-3.unity
     guid: 95166a5892000ba4d893f27dc958c947
+  - enabled: 1
+    path: Assets/Scenes/TowerGame-5.unity
+    guid: 06f09db224b0614409ea257e67134e8e
+  - enabled: 1
+    path: Assets/Scenes/TowerGame-6.unity
+    guid: ace392b309c982541a9ad716dfd1c0aa
+  - enabled: 1
+    path: Assets/Scenes/TowerGame-7.unity
+    guid: cd17f0e219eb16e42a0c91b9457ffdad
+  - enabled: 1
+    path: Assets/Scenes/TowerGame-8.unity
+    guid: 2053f9dbee40957448cdb567b800530b
   m_configObjects: {}

@@ -6,11 +6,26 @@ public class Grabber : MonoBehaviour
 {
     public int count = 0;
     // Start is called before the first frame update
+    public GameObject[] gos;
     void Start()
     {
         
+        StartCoroutine(initVeggies());
     }
+    IEnumerator initVeggies()
+    {
+        yield return new WaitForSeconds(1);
+        gos = GameObject.FindGameObjectsWithTag("GoodItem");
+        StartCoroutine(cueNextVeggie());
 
+    }
+    IEnumerator cueNextVeggie(){
+        yield return new WaitForSeconds(1);
+        gos[count].transform.position = transform.position;
+        gos[count].transform.position += new Vector3(0,-0.4f,0);
+        gos[count].transform.SetParent(gameObject.transform);
+        gos[count].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeAll;
+    }
     // Update is called once per frame
     void Update()
     {
@@ -19,13 +34,23 @@ public class Grabber : MonoBehaviour
         {
             if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(mousePos))
             {
+                gos[count].transform.position = transform.position;
+                gos[count].transform.position += new Vector3(0,-0.4f,0);
+                gos[count].GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+                gos[count].transform.SetParent(gameObject.transform.parent);
+
+
                 count++;
+
+                if(count < gos.Length){
+                    StartCoroutine(cueNextVeggie());
+                }
                 // Debug.Log("Touching Grabber");
                 // GameObject cabbage = Instantiate (Resources.Load ("Prefabs/cabbage") as GameObject);
-                GameObject cabbage = GameObject.Find("cabbage_"+count);
-                cabbage.transform.position = transform.position;
-                cabbage.transform.position += new Vector3(0,-0.4f,0);
-                cabbage.transform.localScale = new Vector3(0.6f,0.6f,0.6f);
+                // GameObject cabbage = GameObject.Find("cabbage_"+count);
+                // gos[count].transform.position = transform.position;
+                // gos[count].transform.position += new Vector3(0,-0.4f,0);
+                // gos[count].transform.localScale = new Vector3(0.6f,0.6f,0.6f);
             }
 
         }

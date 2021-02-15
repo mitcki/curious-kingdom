@@ -11,9 +11,9 @@ GameObject:
   - component: {fileID: 6361955286440385736}
   - component: {fileID: 6361955286440385735}
   - component: {fileID: 6361955286440385733}
-  - component: {fileID: 6821204168308220817}
+  - component: {fileID: 4849814615134854098}
   m_Layer: 0
-  m_Name: cabbage
+  m_Name: lettuce
   m_TagString: GoodItem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -104,8 +104,8 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!58 &6821204168308220817
-CircleCollider2D:
+--- !u!60 &4849814615134854098
+PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -113,10 +113,34 @@ CircleCollider2D:
   m_GameObject: {fileID: 6361955286440385732}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: c0c003aa7cb6a8949a2a33109de830f7, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 0.235
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.72, y: 0.75}
+    newSize: {x: 0.47, y: 0.46}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 0.33026156, y: 0.16218022}
+      - {x: 0.1766571, y: 0.29578468}
+      - {x: 0.06154055, y: 0.349622}
+      - {x: -0.20924401, y: 0.3524418}
+      - {x: -0.3133429, y: 0.27552313}
+      - {x: -0.3571802, y: 0.1916858}
+      - {x: -0.3894441, y: 0.012309074}
+      - {x: -0.35999998, y: -0.195}
+      - {x: -0.29, y: -0.295}
+      - {x: -0.13, y: -0.375}
+      - {x: 0.031407952, y: -0.38909888}
+      - {x: 0.16, y: -0.375}
+      - {x: 0.32, y: -0.24499999}
+      - {x: 0.36281988, y: -0.12218022}
+      - {x: 0.35999998, y: 0.085}

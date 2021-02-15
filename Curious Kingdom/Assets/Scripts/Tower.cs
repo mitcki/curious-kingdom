@@ -17,7 +17,6 @@ public class Tower : MonoBehaviour
     }
     private void OnCollisionEnter2D(Collision2D other) {
         if(other.gameObject.tag == "GoodItem"){
-            Debug.Log("Floor");
             GameObject replay = GameObject.Find("Replay");
             replay.GetComponent<SpriteRenderer>().enabled = true;
             replay.GetComponent<BoxCollider2D>().enabled = true;

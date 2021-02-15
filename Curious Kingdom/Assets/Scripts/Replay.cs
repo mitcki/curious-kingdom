@@ -18,6 +18,7 @@ public class Replay : MonoBehaviour
             {
                 if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(mousePos))
                 {
+                    GoodItem.randomVeggie = "";
                     Scene scene = SceneManager.GetActiveScene(); SceneManager.LoadScene(scene.name);
                 }
             }

@@ -10,8 +10,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2341850507063736899}
   - component: {fileID: 2341850507063736898}
-  - component: {fileID: 2341850507063736897}
   - component: {fileID: 2341850507063736896}
+  - component: {fileID: 8027477332261085259}
   m_Layer: 0
   m_Name: garlic
   m_TagString: GoodItem
@@ -83,7 +83,28 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!60 &2341850507063736897
+--- !u!50 &2341850507063736896
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2341850507063736959}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!60 &8027477332261085259
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -108,44 +129,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.19, y: 0.095}
-      - {x: 0.38, y: 0.185}
-      - {x: 0.39999998, y: 0.195}
-      - {x: 0.39999998, y: 0.21499999}
-      - {x: 0.31, y: 0.315}
-      - {x: 0.26, y: 0.385}
-      - {x: 0.19, y: 0.385}
-      - {x: 0.08, y: 0.255}
-      - {x: 0.03, y: 0.345}
-      - {x: -0.01, y: 0.33499998}
-      - {x: -0.04, y: 0.205}
+    - - {x: 0.034158118, y: 0.15401635}
       - {x: -0.12, y: 0.175}
-      - {x: -0.34, y: 0.145}
-      - {x: -0.41, y: 0.035}
+      - {x: -0.30987343, y: 0.13109538}
+      - {x: -0.4030477, y: 0.014143033}
       - {x: -0.41, y: -0.235}
-      - {x: -0.38, y: -0.385}
+      - {x: -0.34523857, y: -0.37109536}
+      - {x: -0.15952878, y: -0.41514182}
       - {x: 0.03, y: -0.385}
-      - {x: 0.17, y: -0.295}
-      - {x: 0.19999999, y: -0.095}
-      - {x: 0.11, y: 0.035}
---- !u!50 &2341850507063736896
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2341850507063736959}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+      - {x: 0.13755602, y: -0.274143}
+      - {x: 0.18609542, y: -0.11122207}
+      - {x: 0.12853944, y: 0.055856895}

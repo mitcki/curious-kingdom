@@ -41,4 +41,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TowerGame-11.unity
     guid: 19a60a04761d11a4096cb6a3bc3d23b9
+  - enabled: 1
+    path: Assets/Scenes/TowerGame-12.unity
+    guid: e751f3cc7db675342b81c836feb48211
+  - enabled: 1
+    path: Assets/Scenes/TowerGame-13.unity
+    guid: 85a7d5bace81f784392f71ca2ad586a7
+  - enabled: 1
+    path: Assets/Scenes/TowerGame-14.unity
+    guid: 7368f26a3848ae04bba0d00ab79e6ed8
+  - enabled: 1
+    path: Assets/Scenes/TowerGame-15.unity
+    guid: fc6f81978a8b9ee4ba4f6436b6e1ce38
+  - enabled: 1
+    path: Assets/Scenes/TowerGame-16.unity
+    guid: 96e17ad3b379cdb40b201a2275cf0f04
+  - enabled: 1
+    path: Assets/Scenes/TowerGame-17.unity
+    guid: 327368021651d9e4b968b578cc2b4c76
+  - enabled: 1
+    path: Assets/Scenes/TowerGame-18.unity
+    guid: 9ef5d52c68195f3409df87eba1023382
   m_configObjects: {}

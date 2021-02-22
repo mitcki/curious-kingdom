@@ -12,6 +12,10 @@ public class GoodItem : MonoBehaviour
         if(randomVeggie.Length < 1){
             randomVeggie = veggies[Random.Range(0,veggies.Length)];
             // randomVeggie = "broccoli";
+            GameObject spring = GameObject.Find("spring");
+            if(spring){
+                randomVeggie = "lettuce";
+            }
             Debug.Log("switching to " + randomVeggie);
             GameObject veggieLabel = GameObject.Find("veggie_label");
             SpriteRenderer spriteR = veggieLabel.GetComponent<SpriteRenderer>();

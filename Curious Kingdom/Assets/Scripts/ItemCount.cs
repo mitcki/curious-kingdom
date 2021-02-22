@@ -52,7 +52,7 @@ public class ItemCount : MonoBehaviour
         if(badItemCount == 0)
         {
             gameLevel++;
-            if(gameLevel > 16){
+            if(gameLevel > 25){
                 gameLevel = 1;
             }
             SceneManager.LoadScene("TowerGame-"+gameLevel);

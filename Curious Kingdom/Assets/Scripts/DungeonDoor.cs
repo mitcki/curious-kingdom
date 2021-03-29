@@ -29,7 +29,7 @@ public class DungeonDoor : MonoBehaviour
         yield return new WaitForSeconds(1);
         
             gameLevel++;
-            if(gameLevel > 2){
+            if(gameLevel > 4){
                 gameLevel = 1;
             }
             Ketchup.Found = false;

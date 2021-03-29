@@ -757,6 +757,10 @@ EdgeCollider2D:
   - {x: -4.256863, y: 5.868905}
   - {x: -4.1835823, y: 2.739596}
   - {x: -8.967656, y: 2.6996331}
+  - {x: -9.263679, y: 5.000008}
+  - {x: -10.658519, y: 5.565824}
+  - {x: -11.996043, y: 4.88982}
+  - {x: -12.469077, y: 2.6686854}
   - {x: -14.816414, y: 2.6479378}
   - {x: -14.668626, y: -9.613313}
   - {x: -7.1109247, y: -9.533755}
@@ -790,6 +794,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 8436441093612723093, guid: 11b22cdb04a89c84bb082f308583f84f,
+        type: 3}
+      propertyPath: m_LinearDrag
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8436441093612723093, guid: 11b22cdb04a89c84bb082f308583f84f,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8436441093612723096, guid: 11b22cdb04a89c84bb082f308583f84f,
         type: 3}
       propertyPath: m_Name
@@ -803,7 +817,7 @@ PrefabInstance:
     - target: {fileID: 8436441093612723098, guid: 11b22cdb04a89c84bb082f308583f84f,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.23
+      value: -3.26
       objectReference: {fileID: 0}
     - target: {fileID: 8436441093612723098, guid: 11b22cdb04a89c84bb082f308583f84f,
         type: 3}

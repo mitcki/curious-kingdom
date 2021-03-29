@@ -1,0 +1,113 @@
+<drawingAnimations>
+ <drawingAnimation spritesheet="sheet_Top" name="KING_SEQ19_Top">
+  <drawing node="King_group_1_eye_1" name="143-eye_1" drwId="1">
+   <drw skinId="0" frame="1" repeat="52" name="143-eye_1-1.png"/>
+   <drw skinId="0" frame="53" repeat="41" name="143-eye_1-2.png"/>
+   <drw skinId="0" frame="94" repeat="90" name="143-eye_1-1.png"/>
+   <drw skinId="0" frame="184" repeat="6" name="143-eye_1-2.png"/>
+   <drw skinId="0" frame="190" repeat="119" name="143-eye_1-1.png"/>
+   <drw skinId="0" frame="309" repeat="26" name="143-eye_1-2.png"/>
+   <drw skinId="0" frame="335" repeat="170" name="143-eye_1-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_pupil" name="150-pupil" drwId="2">
+   <drw skinId="0" frame="1" repeat="504" name="150-pupil-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_eye" name="151-eye" drwId="3">
+   <drw skinId="0" frame="1" repeat="52" name="151-eye-1.png"/>
+   <drw skinId="0" frame="53" repeat="41" name="151-eye-2.png"/>
+   <drw skinId="0" frame="94" repeat="90" name="151-eye-1.png"/>
+   <drw skinId="0" frame="184" repeat="6" name="151-eye-2.png"/>
+   <drw skinId="0" frame="190" repeat="119" name="151-eye-1.png"/>
+   <drw skinId="0" frame="309" repeat="26" name="151-eye-2.png"/>
+   <drw skinId="0" frame="335" repeat="170" name="151-eye-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_pupil_1" name="144-pupil_1" drwId="4">
+   <drw skinId="0" frame="1" repeat="504" name="144-pupil_1-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_Eyebrown_1" name="153-Eyebrown_1" drwId="5">
+   <drw skinId="0" frame="1" repeat="504" name="153-Eyebrown_1-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_Eyebrown" name="152-Eyebrown" drwId="6">
+   <drw skinId="0" frame="1" repeat="504" name="152-Eyebrown-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_Mouth" name="156-Mouth" drwId="7">
+   <drw skinId="0" frame="1" repeat="3" name="156-Mouth-9.png"/>
+   <drw skinId="0" frame="4" repeat="3" name="156-Mouth-7.png"/>
+   <drw skinId="0" frame="7" repeat="9" name="156-Mouth-3.png"/>
+   <drw skinId="0" frame="16" repeat="3" name="156-Mouth-6.png"/>
+   <drw skinId="0" frame="19" repeat="3" name="156-Mouth-7.png"/>
+   <drw skinId="0" frame="22" repeat="3" name="156-Mouth-9.png"/>
+   <drw skinId="0" frame="25" repeat="3" name="156-Mouth-3.png"/>
+   <drw skinId="0" frame="28" repeat="22" name="156-Mouth-6.png"/>
+   <drw skinId="0" frame="50" repeat="3" name="156-Mouth-3.png"/>
+   <drw skinId="0" frame="53" repeat="3" name="156-Mouth-4.png"/>
+   <drw skinId="0" frame="56" repeat="3" name="156-Mouth-2.png"/>
+   <drw skinId="0" frame="59" repeat="3" name="156-Mouth-5.png"/>
+   <drw skinId="0" frame="62" repeat="12" name="156-Mouth-3.png"/>
+   <drw skinId="0" frame="74" repeat="110" name="156-Mouth-1.png"/>
+   <drw skinId="0" frame="184" repeat="128" name="156-Mouth-9.png"/>
+   <drw skinId="0" frame="312" repeat="18" name="156-Mouth-7.png"/>
+   <drw skinId="0" frame="330" repeat="5" name="156-Mouth-9.png"/>
+   <drw skinId="0" frame="335" repeat="3" name="156-Mouth-8.png"/>
+   <drw skinId="0" frame="338" repeat="3" name="156-Mouth-7.png"/>
+   <drw skinId="0" frame="341" repeat="3" name="156-Mouth-6.png"/>
+   <drw skinId="0" frame="344" repeat="6" name="156-Mouth-7.png"/>
+   <drw skinId="0" frame="350" repeat="3" name="156-Mouth-3.png"/>
+   <drw skinId="0" frame="353" repeat="6" name="156-Mouth-7.png"/>
+   <drw skinId="0" frame="359" repeat="6" name="156-Mouth-3.png"/>
+   <drw skinId="0" frame="365" repeat="140" name="156-Mouth-9.png"/>
+  </drawing>
+  <drawing node="King_group_1_Nose" name="159-Nose" drwId="8">
+   <drw skinId="0" frame="1" repeat="504" name="159-Nose-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_Hair" name="140-Hair" drwId="9">
+   <drw skinId="0" frame="1" repeat="504" name="140-Hair-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_Hair_1" name="141-Hair_1" drwId="10">
+   <drw skinId="0" frame="1" repeat="504" name="141-Hair_1-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_Hand_2" name="157-Hand_2" drwId="11">
+   <drw skinId="0" frame="1" repeat="504" name="157-Hand_2-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_Arm" name="142-Arm" drwId="12">
+   <drw skinId="0" frame="1" repeat="504" name="142-Arm-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_Body_Shadow" name="160-Body_Shadow" drwId="13">
+   <drw skinId="0" frame="1" repeat="504" name="160-Body_Shadow-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_Beard" name="161-Beard" drwId="14">
+   <drw skinId="0" frame="1" repeat="504" name="161-Beard-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_Body" name="147-Body" drwId="15">
+   <drw skinId="0" frame="1" repeat="504" name="147-Body-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_back_ear" name="162-back_ear" drwId="16">
+   <drw skinId="0" frame="1" repeat="504" name="162-back_ear-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_Leg" name="148-Leg" drwId="17">
+   <drw skinId="0" frame="1" repeat="504" name="148-Leg-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_Leg_1" name="145-Leg_1" drwId="18">
+   <drw skinId="0" frame="1" repeat="504" name="145-Leg_1-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_Crown" name="155-Crown" drwId="19">
+   <drw skinId="0" frame="1" repeat="504" name="155-Crown-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_Arm_1" name="149-Arm_1" drwId="20">
+   <drw skinId="0" frame="1" repeat="58" name="149-Arm_1-1.png"/>
+   <drw skinId="0" frame="59" repeat="3" name="149-Arm_1-2.png"/>
+   <drw skinId="0" frame="62" repeat="443" name="149-Arm_1-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_Hand" name="154-Hand" drwId="21">
+   <drw skinId="0" frame="1" repeat="55" name="154-Hand-1.png"/>
+   <drw skinId="0" frame="56" repeat="78" name="154-Hand-2.png"/>
+   <drw skinId="0" frame="134" repeat="371" name="154-Hand-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_capa" name="146-capa" drwId="22">
+   <drw skinId="0" frame="1" repeat="504" name="146-capa-1.png"/>
+  </drawing>
+  <drawing node="King_group_1_Shadow_1" name="158-Shadow" drwId="23">
+   <drw skinId="0" frame="1" repeat="504" name="158-Shadow-1.png"/>
+  </drawing>
+ </drawingAnimation>
+</drawingAnimations>

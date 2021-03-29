@@ -1,0 +1,34 @@
+<stages>
+ <stage name="KING_CASTLE-TORCH_21UN_KING_CASTLE-TORCH_21UN">
+  <node groupId="0" skinId="0" name="King_group_eye_1" drwId="2"/>
+  <node groupId="0" skinId="0" name="King_group_pupil" drwId="3"/>
+  <node groupId="0" skinId="0" name="King_group_eye" drwId="4"/>
+  <node groupId="0" skinId="0" name="King_group_pupil_1" drwId="5"/>
+  <node groupId="0" skinId="0" name="King_group_Eyebrown_1" drwId="6"/>
+  <node groupId="0" skinId="0" name="King_group_Eyebrown" drwId="7"/>
+  <node groupId="0" skinId="0" name="King_group_KETCHUP" drwId="8"/>
+  <node groupId="0" skinId="0" name="King_group_Mouth" drwId="9"/>
+  <node groupId="0" skinId="0" name="King_group_Castelo-G_1_Eyebrow1" drwId="10"/>
+  <node groupId="0" skinId="0" name="King_group_Castelo-G_1_eyebrow" drwId="11"/>
+  <node groupId="0" skinId="0" name="King_group_Castelo-G_1_Eye1" drwId="12"/>
+  <node groupId="0" skinId="0" name="King_group_Castelo-G_1_pupil1" drwId="13"/>
+  <node groupId="0" skinId="0" name="King_group_Castelo-G_1_Eye" drwId="14"/>
+  <node groupId="0" skinId="0" name="King_group_Castelo-G_1_pupil" drwId="15"/>
+  <node groupId="0" skinId="0" name="King_group_Castelo-G_1_mouth" drwId="16"/>
+  <node groupId="0" skinId="0" name="King_group_Castelo-G_1_Torch" drwId="17"/>
+  <node groupId="0" skinId="0" name="King_group_Castelo-G_1_Torch_1" drwId="18"/>
+  <node groupId="0" skinId="0" name="King_group_Hand_2" drwId="19"/>
+  <node groupId="0" skinId="0" name="King_group_Arm" drwId="20"/>
+  <node groupId="0" skinId="0" name="King_group_Hair" drwId="21"/>
+  <node groupId="0" skinId="0" name="King_group_Hair_1" drwId="22"/>
+  <node groupId="0" skinId="0" name="King_group_Body" drwId="23"/>
+  <node groupId="0" skinId="0" name="King_group_Leg" drwId="24"/>
+  <node groupId="0" skinId="0" name="King_group_Leg_1" drwId="25"/>
+  <node groupId="0" skinId="0" name="King_group_Crown" drwId="26"/>
+  <node groupId="0" skinId="0" name="King_group_Hand" drwId="27"/>
+  <node groupId="0" skinId="0" name="King_group_Arm_1" drwId="28"/>
+  <node groupId="0" skinId="0" name="King_group_capa" drwId="29"/>
+  <node groupId="0" skinId="0" name="King_group_Shadow_1" drwId="30"/>
+  <play drawingAnimation="KING_CASTLE-TORCH_21UN_Top" name="Top" skeleton="Top" animation="KING_CASTLE-TORCH_21UN_Top"/>
+ </stage>
+</stages>

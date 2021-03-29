@@ -1,0 +1,12 @@
+<stages>
+ <stage name="CASTLE_ICON_SEQ15_CASTLE_ICON_SEQ15">
+  <node groupId="0" skinId="0" name="Castelo-G_1_Eyebrow1" drwId="2"/>
+  <node groupId="0" skinId="0" name="Castelo-G_1_eyebrow" drwId="3"/>
+  <node groupId="0" skinId="0" name="Castelo-G_1_Eye1" drwId="4"/>
+  <node groupId="0" skinId="0" name="Castelo-G_1_pupil1" drwId="5"/>
+  <node groupId="0" skinId="0" name="Castelo-G_1_Eye" drwId="6"/>
+  <node groupId="0" skinId="0" name="Castelo-G_1_pupil" drwId="7"/>
+  <node groupId="0" skinId="0" name="Castelo-G_1_mouth" drwId="8"/>
+  <play drawingAnimation="CASTLE_ICON_SEQ15_Top" name="Top" skeleton="Top" animation="CASTLE_ICON_SEQ15_Top"/>
+ </stage>
+</stages>

@@ -1,0 +1,7 @@
+<stages>
+ <stage name="SPR01_KING_TO_PAPERBALL_SPR01_KING_TO_PAPERBALL">
+  <node groupId="0" skinId="0" name="Folding" drwId="1"/>
+  <node groupId="0" skinId="0" name="Bola" drwId="2"/>
+  <play drawingAnimation="SPR01_KING_TO_PAPERBALL_Top" name="Top" skeleton="Top" animation="SPR01_KING_TO_PAPERBALL_Top"/>
+ </stage>
+</stages>

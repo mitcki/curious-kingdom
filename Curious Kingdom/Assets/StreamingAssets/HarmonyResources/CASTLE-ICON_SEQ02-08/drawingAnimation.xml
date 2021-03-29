@@ -1,0 +1,186 @@
+<drawingAnimations>
+ <drawingAnimation spritesheet="sheet_Top" name="CASTLE-ICON_SEQ02-08_Top">
+  <drawing node="Castelo-G_2_Eyebrow1" name="168-Eyebrow1" drwId="1">
+   <drw skinId="0" frame="1" repeat="1250" name="168-Eyebrow1-1.png"/>
+  </drawing>
+  <drawing node="Castelo-G_2_eyebrow" name="163-eyebrow" drwId="2">
+   <drw skinId="0" frame="1" repeat="1250" name="163-eyebrow-1.png"/>
+  </drawing>
+  <drawing node="Castelo-G_2_Eye1" name="164-Eye1" drwId="3">
+   <drw skinId="0" frame="1" repeat="130" name="164-Eye1-1.png"/>
+   <drw skinId="0" frame="131" repeat="30" name="164-Eye1-2.png"/>
+   <drw skinId="0" frame="161" repeat="54" name="164-Eye1-1.png"/>
+   <drw skinId="0" frame="215" repeat="9" name="164-Eye1-2.png"/>
+   <drw skinId="0" frame="224" repeat="33" name="164-Eye1-1.png"/>
+   <drw skinId="0" frame="257" repeat="6" name="164-Eye1-2.png"/>
+   <drw skinId="0" frame="263" repeat="156" name="164-Eye1-1.png"/>
+   <drw skinId="0" frame="419" repeat="9" name="164-Eye1-2.png"/>
+   <drw skinId="0" frame="428" repeat="54" name="164-Eye1-1.png"/>
+   <drw skinId="0" frame="482" repeat="28" name="164-Eye1-3.png"/>
+   <drw skinId="0" frame="510" repeat="178" name="164-Eye1-1.png"/>
+   <drw skinId="0" frame="688" repeat="6" name="164-Eye1-2.png"/>
+   <drw skinId="0" frame="694" repeat="69" name="164-Eye1-1.png"/>
+   <drw skinId="0" frame="763" repeat="6" name="164-Eye1-2.png"/>
+   <drw skinId="0" frame="769" repeat="116" name="164-Eye1-1.png"/>
+   <drw skinId="0" frame="885" repeat="6" name="164-Eye1-2.png"/>
+   <drw skinId="0" frame="891" repeat="360" name="164-Eye1-1.png"/>
+  </drawing>
+  <drawing node="Castelo-G_2_pupil1" name="165-pupil1" drwId="4">
+   <drw skinId="0" frame="1" repeat="1250" name="165-pupil1-1.png"/>
+  </drawing>
+  <drawing node="Castelo-G_2_Eye" name="170-Eye" drwId="5">
+   <drw skinId="0" frame="1" repeat="130" name="170-Eye-1.png"/>
+   <drw skinId="0" frame="131" repeat="30" name="170-Eye-2.png"/>
+   <drw skinId="0" frame="161" repeat="54" name="170-Eye-1.png"/>
+   <drw skinId="0" frame="215" repeat="9" name="170-Eye-2.png"/>
+   <drw skinId="0" frame="224" repeat="33" name="170-Eye-1.png"/>
+   <drw skinId="0" frame="257" repeat="6" name="170-Eye-2.png"/>
+   <drw skinId="0" frame="263" repeat="156" name="170-Eye-1.png"/>
+   <drw skinId="0" frame="419" repeat="9" name="170-Eye-2.png"/>
+   <drw skinId="0" frame="428" repeat="54" name="170-Eye-1.png"/>
+   <drw skinId="0" frame="482" repeat="28" name="170-Eye-3.png"/>
+   <drw skinId="0" frame="510" repeat="178" name="170-Eye-1.png"/>
+   <drw skinId="0" frame="688" repeat="6" name="170-Eye-2.png"/>
+   <drw skinId="0" frame="694" repeat="69" name="170-Eye-1.png"/>
+   <drw skinId="0" frame="763" repeat="6" name="170-Eye-2.png"/>
+   <drw skinId="0" frame="769" repeat="116" name="170-Eye-1.png"/>
+   <drw skinId="0" frame="885" repeat="6" name="170-Eye-2.png"/>
+   <drw skinId="0" frame="891" repeat="360" name="170-Eye-1.png"/>
+  </drawing>
+  <drawing node="Castelo-G_2_pupil" name="171-pupil" drwId="6">
+   <drw skinId="0" frame="1" repeat="1250" name="171-pupil-1.png"/>
+  </drawing>
+  <drawing node="Castelo-G_2_mouth" name="166-mouth" drwId="7">
+   <drw skinId="0" frame="1" repeat="119" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="120" repeat="3" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="123" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="126" repeat="3" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="129" repeat="3" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="132" repeat="3" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="135" repeat="3" name="166-mouth-5_1.png"/>
+   <drw skinId="0" frame="138" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="141" repeat="3" name="166-mouth-2.png"/>
+   <drw skinId="0" frame="144" repeat="3" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="147" repeat="3" name="166-mouth-5_1.png"/>
+   <drw skinId="0" frame="150" repeat="3" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="153" repeat="6" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="159" repeat="3" name="166-mouth-2.png"/>
+   <drw skinId="0" frame="162" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="165" repeat="6" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="171" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="174" repeat="3" name="166-mouth-2.png"/>
+   <drw skinId="0" frame="177" repeat="3" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="180" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="183" repeat="3" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="186" repeat="3" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="189" repeat="6" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="195" repeat="23" name="166-mouth-2.png"/>
+   <drw skinId="0" frame="218" repeat="3" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="221" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="224" repeat="3" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="227" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="230" repeat="3" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="233" repeat="6" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="239" repeat="3" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="242" repeat="3" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="245" repeat="3" name="166-mouth-5_1.png"/>
+   <drw skinId="0" frame="248" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="251" repeat="3" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="254" repeat="3" name="166-mouth-5_1.png"/>
+   <drw skinId="0" frame="257" repeat="3" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="260" repeat="3" name="166-mouth-2.png"/>
+   <drw skinId="0" frame="263" repeat="3" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="266" repeat="7" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="273" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="276" repeat="3" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="279" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="282" repeat="3" name="166-mouth-2.png"/>
+   <drw skinId="0" frame="285" repeat="6" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="291" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="294" repeat="3" name="166-mouth-5_1.png"/>
+   <drw skinId="0" frame="297" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="300" repeat="3" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="303" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="306" repeat="3" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="309" repeat="6" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="315" repeat="9" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="324" repeat="98" name="166-mouth-2.png"/>
+   <drw skinId="0" frame="422" repeat="6" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="428" repeat="6" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="434" repeat="6" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="440" repeat="6" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="446" repeat="3" name="166-mouth-6_1.png"/>
+   <drw skinId="0" frame="449" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="452" repeat="6" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="458" repeat="6" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="464" repeat="6" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="470" repeat="12" name="166-mouth-2.png"/>
+   <drw skinId="0" frame="482" repeat="28" name="166-mouth-6_1.png"/>
+   <drw skinId="0" frame="510" repeat="6" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="516" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="519" repeat="6" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="525" repeat="3" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="528" repeat="3" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="531" repeat="6" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="537" repeat="3" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="540" repeat="3" name="166-mouth-5_1.png"/>
+   <drw skinId="0" frame="543" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="546" repeat="3" name="166-mouth-5_1.png"/>
+   <drw skinId="0" frame="549" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="552" repeat="3" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="555" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="558" repeat="6" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="564" repeat="12" name="166-mouth-6_1.png"/>
+   <drw skinId="0" frame="576" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="579" repeat="3" name="166-mouth-6_1.png"/>
+   <drw skinId="0" frame="582" repeat="15" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="597" repeat="6" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="603" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="606" repeat="3" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="609" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="612" repeat="3" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="615" repeat="3" name="166-mouth-2.png"/>
+   <drw skinId="0" frame="618" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="621" repeat="3" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="624" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="627" repeat="3" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="630" repeat="3" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="633" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="636" repeat="3" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="639" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="642" repeat="4" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="646" repeat="3" name="166-mouth-5_1.png"/>
+   <drw skinId="0" frame="649" repeat="3" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="652" repeat="6" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="658" repeat="9" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="667" repeat="224" name="166-mouth-6_1.png"/>
+   <drw skinId="0" frame="891" repeat="3" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="894" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="897" repeat="9" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="906" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="909" repeat="3" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="912" repeat="3" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="915" repeat="3" name="166-mouth-4.png"/>
+   <drw skinId="0" frame="918" repeat="12" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="930" repeat="6" name="166-mouth-1.png"/>
+   <drw skinId="0" frame="936" repeat="9" name="166-mouth-3.png"/>
+   <drw skinId="0" frame="945" repeat="306" name="166-mouth-2.png"/>
+  </drawing>
+  <drawing node="Castelo-G_2_top_part" name="167-top_part" drwId="8">
+   <drw skinId="0" frame="1" repeat="1250" name="167-top_part-1.png"/>
+  </drawing>
+  <drawing node="Castelo-G_2_Body" name="169-Body" drwId="9">
+   <drw skinId="0" frame="1" repeat="421" name="169-Body-1.png"/>
+   <drw skinId="0" frame="422" repeat="85" name="169-Body-2_1.png"/>
+   <drw skinId="0" frame="507" repeat="744" name="169-Body-1.png"/>
+  </drawing>
+  <drawing node="Castelo-G_2_top_part_1" name="167-top_part" drwId="10">
+   <drw skinId="0" frame="1" repeat="1250" name="167-top_part-1.png"/>
+  </drawing>
+  <drawing node="Castelo-G_2_Body_1" name="169-Body" drwId="11">
+   <drw skinId="0" frame="1" repeat="421" name="169-Body-1.png"/>
+   <drw skinId="0" frame="422" repeat="85" name="169-Body-2_1.png"/>
+   <drw skinId="0" frame="507" repeat="744" name="169-Body-1.png"/>
+  </drawing>
+ </drawingAnimation>
+</drawingAnimations>

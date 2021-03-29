@@ -1,0 +1,92 @@
+<drawingAnimations>
+ <drawingAnimation spritesheet="sheet_Top" name="CASTLE-ICON_SEQ16-18_UN_Top">
+  <drawing node="Drawing" name="1-Drawing" drwId="1"/>
+  <drawing node="Castelo-G_1_Eyebrow1" name="6-Eyebrow1" drwId="2">
+   <drw skinId="0" frame="1" repeat="326" name="6-Eyebrow1-1.png"/>
+   <drw skinId="0" frame="327" repeat="206" name="6-Eyebrow1-2.png"/>
+   <drw skinId="0" frame="533" repeat="396" name="6-Eyebrow1-1.png"/>
+  </drawing>
+  <drawing node="Castelo-G_1_eyebrow" name="2-eyebrow" drwId="3">
+   <drw skinId="0" frame="1" repeat="326" name="2-eyebrow-1.png"/>
+   <drw skinId="0" frame="327" repeat="206" name="2-eyebrow-2.png"/>
+   <drw skinId="0" frame="533" repeat="396" name="2-eyebrow-1.png"/>
+  </drawing>
+  <drawing node="Castelo-G_1_Eye1" name="3-Eye1" drwId="4">
+   <drw skinId="0" frame="1" repeat="39" name="3-Eye1-1.png"/>
+   <drw skinId="0" frame="40" repeat="4" name="3-Eye1-2.png"/>
+   <drw skinId="0" frame="44" repeat="95" name="3-Eye1-1.png"/>
+   <drw skinId="0" frame="139" repeat="4" name="3-Eye1-2.png"/>
+   <drw skinId="0" frame="143" repeat="104" name="3-Eye1-1.png"/>
+   <drw skinId="0" frame="247" repeat="4" name="3-Eye1-2.png"/>
+   <drw skinId="0" frame="251" repeat="72" name="3-Eye1-1.png"/>
+   <drw skinId="0" frame="323" repeat="4" name="3-Eye1-2.png"/>
+   <drw skinId="0" frame="327" repeat="66" name="3-Eye1-1.png"/>
+   <drw skinId="0" frame="393" repeat="4" name="3-Eye1-2.png"/>
+   <drw skinId="0" frame="397" repeat="136" name="3-Eye1-1.png"/>
+   <drw skinId="0" frame="533" repeat="4" name="3-Eye1-2.png"/>
+   <drw skinId="0" frame="537" repeat="131" name="3-Eye1-1.png"/>
+   <drw skinId="0" frame="668" repeat="4" name="3-Eye1-2.png"/>
+   <drw skinId="0" frame="672" repeat="171" name="3-Eye1-1.png"/>
+   <drw skinId="0" frame="843" repeat="4" name="3-Eye1-2.png"/>
+   <drw skinId="0" frame="847" repeat="82" name="3-Eye1-1.png"/>
+  </drawing>
+  <drawing node="Castelo-G_1_pupil1" name="4-pupil1" drwId="5">
+   <drw skinId="0" frame="1" repeat="928" name="4-pupil1-1.png"/>
+  </drawing>
+  <drawing node="Castelo-G_1_Eye" name="7-Eye" drwId="6">
+   <drw skinId="0" frame="1" repeat="39" name="7-Eye-1.png"/>
+   <drw skinId="0" frame="40" repeat="4" name="7-Eye-2.png"/>
+   <drw skinId="0" frame="44" repeat="95" name="7-Eye-1.png"/>
+   <drw skinId="0" frame="139" repeat="4" name="7-Eye-2.png"/>
+   <drw skinId="0" frame="143" repeat="104" name="7-Eye-1.png"/>
+   <drw skinId="0" frame="247" repeat="4" name="7-Eye-2.png"/>
+   <drw skinId="0" frame="251" repeat="72" name="7-Eye-1.png"/>
+   <drw skinId="0" frame="323" repeat="4" name="7-Eye-2.png"/>
+   <drw skinId="0" frame="327" repeat="66" name="7-Eye-1.png"/>
+   <drw skinId="0" frame="393" repeat="4" name="7-Eye-2.png"/>
+   <drw skinId="0" frame="397" repeat="136" name="7-Eye-1.png"/>
+   <drw skinId="0" frame="533" repeat="4" name="7-Eye-2.png"/>
+   <drw skinId="0" frame="537" repeat="131" name="7-Eye-1.png"/>
+   <drw skinId="0" frame="668" repeat="4" name="7-Eye-2.png"/>
+   <drw skinId="0" frame="672" repeat="171" name="7-Eye-1.png"/>
+   <drw skinId="0" frame="843" repeat="4" name="7-Eye-2.png"/>
+   <drw skinId="0" frame="847" repeat="82" name="7-Eye-1.png"/>
+  </drawing>
+  <drawing node="Castelo-G_1_pupil" name="8-pupil" drwId="7">
+   <drw skinId="0" frame="1" repeat="928" name="8-pupil-1.png"/>
+  </drawing>
+  <drawing node="Castelo-G_1_mouth" name="5-mouth" drwId="8">
+   <drw skinId="0" frame="1" repeat="336" name="5-mouth-2.png"/>
+   <drw skinId="0" frame="337" repeat="5" name="5-mouth-4.png"/>
+   <drw skinId="0" frame="342" repeat="2" name="5-mouth-2.png"/>
+   <drw skinId="0" frame="344" repeat="9" name="5-mouth-4.png"/>
+   <drw skinId="0" frame="353" repeat="17" name="5-mouth-2.png"/>
+   <drw skinId="0" frame="370" repeat="7" name="5-mouth-1.png"/>
+   <drw skinId="0" frame="377" repeat="4" name="5-mouth-3.png"/>
+   <drw skinId="0" frame="381" repeat="4" name="5-mouth-1.png"/>
+   <drw skinId="0" frame="385" repeat="3" name="5-mouth-2.png"/>
+   <drw skinId="0" frame="388" repeat="3" name="5-mouth-6.png"/>
+   <drw skinId="0" frame="391" repeat="3" name="5-mouth-4.png"/>
+   <drw skinId="0" frame="394" repeat="4" name="5-mouth-2.png"/>
+   <drw skinId="0" frame="398" repeat="8" name="5-mouth-4.png"/>
+   <drw skinId="0" frame="406" repeat="144" name="5-mouth-2.png"/>
+   <drw skinId="0" frame="550" repeat="7" name="5-mouth-1.png"/>
+   <drw skinId="0" frame="557" repeat="3" name="5-mouth-4.png"/>
+   <drw skinId="0" frame="560" repeat="3" name="5-mouth-2.png"/>
+   <drw skinId="0" frame="563" repeat="3" name="5-mouth-6.png"/>
+   <drw skinId="0" frame="566" repeat="8" name="5-mouth-3.png"/>
+   <drw skinId="0" frame="574" repeat="3" name="5-mouth-7.png"/>
+   <drw skinId="0" frame="577" repeat="3" name="5-mouth-1.png"/>
+   <drw skinId="0" frame="580" repeat="3" name="5-mouth-3.png"/>
+   <drw skinId="0" frame="583" repeat="3" name="5-mouth-2.png"/>
+   <drw skinId="0" frame="586" repeat="5" name="5-mouth-4.png"/>
+   <drw skinId="0" frame="591" repeat="4" name="5-mouth-2.png"/>
+   <drw skinId="0" frame="595" repeat="4" name="5-mouth-1.png"/>
+   <drw skinId="0" frame="599" repeat="2" name="5-mouth-6.png"/>
+   <drw skinId="0" frame="601" repeat="4" name="5-mouth-2.png"/>
+   <drw skinId="0" frame="605" repeat="5" name="5-mouth-1.png"/>
+   <drw skinId="0" frame="610" repeat="5" name="5-mouth-3.png"/>
+   <drw skinId="0" frame="615" repeat="314" name="5-mouth-2.png"/>
+  </drawing>
+ </drawingAnimation>
+</drawingAnimations>

@@ -1,0 +1,16 @@
+<stages>
+ <stage name="CASTLE-ICON_SEQ09-10_CASTLE-ICON_SEQ09-10">
+  <node groupId="0" skinId="0" name="Castelo-G_2_Eyebrow1" drwId="1"/>
+  <node groupId="0" skinId="0" name="Castelo-G_2_eyebrow" drwId="2"/>
+  <node groupId="0" skinId="0" name="Castelo-G_2_Eye1" drwId="3"/>
+  <node groupId="0" skinId="0" name="Castelo-G_2_pupil1" drwId="4"/>
+  <node groupId="0" skinId="0" name="Castelo-G_2_Eye" drwId="5"/>
+  <node groupId="0" skinId="0" name="Castelo-G_2_pupil" drwId="6"/>
+  <node groupId="0" skinId="0" name="Castelo-G_2_mouth" drwId="7"/>
+  <node groupId="0" skinId="0" name="Castelo-G_2_top_part" drwId="8"/>
+  <node groupId="0" skinId="0" name="Castelo-G_2_Body" drwId="9"/>
+  <node groupId="0" skinId="0" name="Castelo-G_2_top_part_1" drwId="10"/>
+  <node groupId="0" skinId="0" name="Castelo-G_2_Body_1" drwId="11"/>
+  <play drawingAnimation="CASTLE-ICON_SEQ09-10_Top" name="Top" skeleton="Top" animation="CASTLE-ICON_SEQ09-10_Top"/>
+ </stage>
+</stages>

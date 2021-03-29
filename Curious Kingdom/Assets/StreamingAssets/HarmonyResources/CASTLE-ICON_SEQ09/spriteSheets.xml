@@ -1,0 +1,22 @@
+<!DOCTYPE spritesheets>
+<spritesheets>
+ <spritesheet resolution="Main_stup" width="2048" height="1024" name="sheet_Top" filename="spriteSheets/sheet_Top-Main_stup.png">
+  <sprite scaleY="1.17188" angleDegrees="0" rect="1377,0,545,524" offsetX="-40.1109" offsetY="-65.6683" name="169-Body-1.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="836,0,541,242" offsetX="55.4069" offsetY="197.082" name="167-top_part-1.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="754,0,82,86" offsetX="-120.823" offsetY="79.6629" name="164-Eye1-1.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="672,0,82,86" offsetX="138.436" offsetY="32.3968" name="170-Eye-1.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="589,0,83,64" offsetX="12.4501" offsetY="7.0528" name="166-mouth-1.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="502,0,87,58" offsetX="12.9195" offsetY="9.74507" name="166-mouth-3.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="447,0,55,58" offsetX="7.31307" offsetY="2.03947" name="166-mouth-4.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="403,0,44,55" offsetX="-113.711" offsetY="65.3909" name="165-pupil1-1.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="359,0,44,55" offsetX="145.916" offsetY="18.5472" name="171-pupil-1.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="263,0,96,47" offsetX="14.8267" offsetY="14.5536" name="166-mouth-5.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="196,0,67,44" offsetX="151.556" offsetY="79.3301" name="163-eyebrow-1.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="121,0,75,32" offsetX="12.4288" offsetY="12.3136" name="166-mouth-2.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="48,0,73,31" offsetX="-120.239" offsetY="132.587" name="168-Eyebrow1-1.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="36,0,12,12" offsetX="0" offsetY="0" name="164-Eye1-2.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="24,0,12,12" offsetX="0" offsetY="0" name="164-Eye1-3.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="12,0,12,12" offsetX="0" offsetY="0" name="170-Eye-2.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="0,0,12,12" offsetX="0" offsetY="0" name="170-Eye-3.png" scaleX="1.17188"/>
+ </spritesheet>
+</spritesheets>

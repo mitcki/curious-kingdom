@@ -1,0 +1,13 @@
+<!DOCTYPE spritesheets>
+<spritesheets>
+ <spritesheet resolution="Main_stup" width="3000" height="2048" name="sheet_Top" filename="spriteSheets/sheet_Top-Main_stup.png">
+  <sprite scaleY="1.17188" angleDegrees="0" rect="2319,695,594,879" offsetX="42.0267" offsetY="17.1008" name="2-Folding-11.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="1664,695,655,754" offsetX="42.0267" offsetY="17.1008" name="2-Folding-12.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="829,695,835,696" offsetX="2.70761" offsetY="-17.5037" name="2-Folding-1_Layer_3.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="0,695,829,695" offsetX="-27.6992" offsetY="-44.1984" name="2-Folding-13.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="2084,0,829,695" offsetX="-27.6992" offsetY="-44.1984" name="2-Folding-4.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="1479,0,605,607" offsetX="-14.9717" offsetY="-27.4347" name="2-Folding-6.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="1016,0,463,498" offsetX="6.68053" offsetY="-6.68053" name="3-Bola-1.png" scaleX="1.17188"/>
+  <sprite scaleY="1.17188" angleDegrees="0" rect="531,0,485,469" offsetX="-10.9696" offsetY="-11.0123" name="2-Folding-7.png" scaleX="1.17188"/>
+ </spritesheet>
+</spritesheets>

@@ -1,3 +1,0 @@
-Pre Packiging has failed.
-Please check if you have original StreamingAssets-RunExecutable structure.
-If all above fails,please contact support.

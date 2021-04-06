@@ -95,9 +95,12 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Dungeon-4.unity
     guid: 2532e7ae877aa8843a5c3a757d2bf786
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ARScene.unity
     guid: b1347c4450ac24988932cf89468bbbd8
+  - enabled: 1
+    path: Assets/Scenes/Intro1.unity
+    guid: 1ff83d3136d04405f883e8cee9e15ad9
   m_configObjects:
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 109a5252a8e494785af6fea653f07113,
       type: 2}

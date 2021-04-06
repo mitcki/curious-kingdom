@@ -651,13 +651,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3483218298700028005, guid: 11b3c5aafc0374284bdff26bac41f603,
         type: 3}
+      propertyPath: _autoPlay
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3483218298700028005, guid: 11b3c5aafc0374284bdff26bac41f603,
+        type: 3}
       propertyPath: _loopMode
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5445604190710145799, guid: 11b3c5aafc0374284bdff26bac41f603,
         type: 3}
       propertyPath: _currentFrame
-      value: 13
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5445604190710145799, guid: 11b3c5aafc0374284bdff26bac41f603,
         type: 3}

@@ -99,6 +99,9 @@ EditorBuildSettings:
     path: Assets/Scenes/ARScene.unity
     guid: b1347c4450ac24988932cf89468bbbd8
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 6a47071985f494571b5d3ae00f5a1cd8
+  - enabled: 1
     path: Assets/Scenes/Intro1.unity
     guid: 1ff83d3136d04405f883e8cee9e15ad9
   m_configObjects:

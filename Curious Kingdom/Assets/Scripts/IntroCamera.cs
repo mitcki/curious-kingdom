@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class IntroCamera : MonoBehaviour
 {
@@ -17,7 +19,15 @@ public class IntroCamera : MonoBehaviour
      {
         yield return new WaitForSeconds(startDelay);
         animator.Play("CameraTruckRight");
+        StartCoroutine(LoadGameDelay());
+     }
 
+     IEnumerator LoadGameDelay()
+     {
+        yield return new WaitForSeconds(12);
+
+         GameObject levelLoader = GameObject.Find("LevelLoader");
+         levelLoader.GetComponent<LevelLoader>().LoadNextLevel("TowerGame-1");
      }
 
     // Update is called once per frame

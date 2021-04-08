@@ -14,9 +14,13 @@ public class MenuKing : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 pos = Input.mousePosition;
+        pos.z = 10;
+        Vector3 mousePos = Camera.main.ScreenToWorldPoint(pos);
+
         if (Input.GetMouseButtonDown(0) || Input.touchCount == 1)
         {
+
             if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(mousePos))
             {
                 SceneManager.LoadScene("Intro1");

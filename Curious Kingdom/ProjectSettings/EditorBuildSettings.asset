@@ -8,79 +8,79 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/PickleGame.unity
     guid: c3fe945bf31a1455485ac24faa79d16a
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-2.unity
     guid: eff0ebf03a4adf941854dd7861b12bd5
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-4.unity
     guid: 8136a84180325794bad06aaf35b82d51
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-3.unity
     guid: 95166a5892000ba4d893f27dc958c947
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-5.unity
     guid: 06f09db224b0614409ea257e67134e8e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-6.unity
     guid: ace392b309c982541a9ad716dfd1c0aa
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-7.unity
     guid: cd17f0e219eb16e42a0c91b9457ffdad
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-8.unity
     guid: 2053f9dbee40957448cdb567b800530b
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-9.unity
     guid: 3d7d6f4d57f6d2b48b44e12edb49ea34
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-10.unity
     guid: 67e7042ff27ff774c9b51be891c6c50e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-11.unity
     guid: 19a60a04761d11a4096cb6a3bc3d23b9
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-12.unity
     guid: e751f3cc7db675342b81c836feb48211
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-13.unity
     guid: 85a7d5bace81f784392f71ca2ad586a7
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-14.unity
     guid: 7368f26a3848ae04bba0d00ab79e6ed8
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-15.unity
     guid: fc6f81978a8b9ee4ba4f6436b6e1ce38
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-16.unity
     guid: 96e17ad3b379cdb40b201a2275cf0f04
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-17.unity
     guid: 327368021651d9e4b968b578cc2b4c76
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-18.unity
     guid: 9ef5d52c68195f3409df87eba1023382
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-19.unity
     guid: c01e3834f5fcb9648890f23bbfeaabb9
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-20.unity
     guid: 60c22845cd7040c478173f8ce8080b7d
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-21.unity
     guid: 4c14f111f2fcccf43be702dd0f7be2fa
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-22.unity
     guid: 55368c5eed0ceb94c8cb7e3c06de2980
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-23.unity
     guid: d4afefcb4a1b3c746a8ea3a0b9664467
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-24.unity
     guid: 8082b3fddcc5f4b4f9442dd808d86d15
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/TowerGame-25.unity
     guid: 4e450cb146a7c46429fa3bc4805b1d6e
   - enabled: 0

@@ -28,18 +28,25 @@ public class IntroCamera : MonoBehaviour
 
 
         animator.Play("CameraTruckRight");
-        StartCoroutine(LoadGameDelay());
+        StartCoroutine(ShowQueenDelay());
      }
 
-     IEnumerator LoadGameDelay()
+     IEnumerator ShowQueenDelay()
      {
-        yield return new WaitForSeconds(12);
+        yield return new WaitForSeconds(13f);
         GameObject paperBall = GameObject.Find("queentopaperball_2");
         paperBall.GetComponent<SpriteRenderer>().enabled = true;
         paperBall.GetComponent<Animator>().enabled = true;
 
+         StartCoroutine(StartLevelDelay());
+     }
+
+     IEnumerator StartLevelDelay()
+     {
+         yield return new WaitForSeconds(31f);
          GameObject levelLoader = GameObject.Find("LevelLoader");
-        //  levelLoader.GetComponent<LevelLoader>().LoadNextLevel("TowerGame-1");
+         levelLoader.GetComponent<LevelLoader>().LoadNextLevel("TowerGame-1");
+
      }
 
     // Update is called once per frame

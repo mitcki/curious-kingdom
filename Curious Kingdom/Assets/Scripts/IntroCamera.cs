@@ -9,6 +9,7 @@ public class IntroCamera : MonoBehaviour
     // Start is called before the first frame update
     public int startDelay;
     private Animator animator;
+    public GameObject IconCastle;
     void Start()
     {
         animator = GetComponent<Animator>();
@@ -23,14 +24,21 @@ public class IntroCamera : MonoBehaviour
         paperBall.GetComponent<SpriteRenderer>().enabled = true;
         paperBall.GetComponent<Animator>().enabled = true;
 
-        GameObject kingSwf = GameObject.Find("KING_SEQ01_OFFWEGO.fla.KING_SEQ01_OFFWEGO");
+       GameObject kingSwf = GameObject.Find("KING_SEQ01_OFFWEGO.fla.KING_SEQ01_OFFWEGO");
         kingSwf.GetComponent<MeshRenderer>().enabled = false;
 
 
         animator.Play("CameraTruckRight");
         StartCoroutine(ShowQueenDelay());
-     }
+        StartCoroutine(StartCastleIcon());
 
+     }
+    IEnumerator StartCastleIcon(){
+        yield return new WaitForSeconds(1.3f);
+        Instantiate(IconCastle);
+
+        
+    }
      IEnumerator ShowQueenDelay()
      {
         yield return new WaitForSeconds(13f);

@@ -55,7 +55,9 @@ public class ItemCount : MonoBehaviour
             if(gameLevel > 25){
                 gameLevel = 1;
             }
-            SceneManager.LoadScene("TowerGame-"+gameLevel);
+            // SceneManager.LoadScene("TowerGame-"+gameLevel);
+            GameObject levelLoader = GameObject.Find("LevelLoader");
+            levelLoader.GetComponent<LevelLoader>().LoadNextLevel("TowerGame-"+gameLevel);
         } else {
             GameObject replay = GameObject.Find("Replay");
             replay.GetComponent<SpriteRenderer>().enabled = true;

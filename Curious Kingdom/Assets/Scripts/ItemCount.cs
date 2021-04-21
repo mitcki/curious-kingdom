@@ -8,16 +8,23 @@ public class ItemCount : MonoBehaviour
     public int itemCount = 0;
     public int badItemCount = 0;
     public static int totalItems = 0;
-    public static int gameLevel = 1;
-
+    public static int gameLevel = 0;
+    public int[] gameLevels;
     // Start is called before the first frame update
     void Start()
     {
+        gameLevels = new int[4];
+
+        gameLevels[0] = 1;
+        gameLevels[1] = Random.Range(7,13);
+        gameLevels[2] = Random.Range(14, 19);
+        gameLevels[3] = Random.Range(20,25);
+        //  = {1,Random.Range(7,13),Random.Range(14, 19),Random.Range(20,25)}
         // GameObject[] gos;
         // gos = GameObject.FindGameObjectsWithTag("GoodItem");
         // totalItems = gos.Length;
 
-        // Debug.Log(totalItems);
+        Debug.Log(gameLevels[1]);
         // totalItems = 0;
     }
 
@@ -52,12 +59,13 @@ public class ItemCount : MonoBehaviour
         if(badItemCount == 0)
         {
             gameLevel++;
-            if(gameLevel > 25){
-                gameLevel = 1;
+            if(gameLevel > 3){
+                GameObject levelLoader1 = GameObject.Find("LevelLoader");
+                levelLoader1.GetComponent<LevelLoader>().LoadNextLevel("Intro1");
             }
             // SceneManager.LoadScene("TowerGame-"+gameLevel);
             GameObject levelLoader = GameObject.Find("LevelLoader");
-            levelLoader.GetComponent<LevelLoader>().LoadNextLevel("TowerGame-"+gameLevel);
+            levelLoader.GetComponent<LevelLoader>().LoadNextLevel("TowerGame-"+gameLevels[gameLevel]);
         } else {
             GameObject replay = GameObject.Find("Replay");
             replay.GetComponent<SpriteRenderer>().enabled = true;

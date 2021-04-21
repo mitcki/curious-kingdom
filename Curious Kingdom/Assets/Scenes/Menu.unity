@@ -538,8 +538,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dragSpeed: 0.5
   cameraDragging: 1
-  outerLeft: -7
-  outerRight: 8
+  outerLeft: -6
+  outerRight: 7
 --- !u!1001 &736705436
 PrefabInstance:
   m_ObjectHideFlags: 0

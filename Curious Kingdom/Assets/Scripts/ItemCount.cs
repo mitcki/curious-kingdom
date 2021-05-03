@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FTRuntime;
+using FTRuntime.Yields;
 
 public class ItemCount : MonoBehaviour
 {
@@ -40,6 +42,8 @@ public class ItemCount : MonoBehaviour
             itemCount++;
             if(itemCount == totalItems){
                 Debug.Log("Win");
+                GameObject kingAnimation = GameObject.Find("KING_JUMP_V1.fla.KING_JUMP_V1");
+                kingAnimation.GetComponent<SwfClipController>().Play(false);
                 StartCoroutine(nextLevel());
                 GoodItem.randomVeggie = "";
                 totalItems = 0;

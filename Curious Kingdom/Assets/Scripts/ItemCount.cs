@@ -43,7 +43,15 @@ public class ItemCount : MonoBehaviour
             if(itemCount == totalItems){
                 Debug.Log("Win");
                 GameObject kingAnimation = GameObject.Find("KING_JUMP_V1.fla.KING_JUMP_V1");
-                kingAnimation.GetComponent<SwfClipController>().Play(false);
+                if(kingAnimation){
+                    kingAnimation.GetComponent<SwfClipController>().Play(false);
+                }
+                GameObject kingAnimation2 = GameObject.Find("KING_JUMP_V2.fla.KING_JUMP_V3");
+                if(kingAnimation2){
+                    kingAnimation2.GetComponent<SwfClipController>().Play(false);
+                }
+
+                
                 StartCoroutine(nextLevel());
                 GoodItem.randomVeggie = "";
                 totalItems = 0;

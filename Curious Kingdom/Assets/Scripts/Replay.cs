@@ -7,7 +7,8 @@ public class Replay : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        GameObject kingJump = GameObject.Find("KING_REPLAY.fla.KING_REPLAY");
+        kingJump.GetComponent<MeshRenderer>().enabled = false;
     }
 
     // Update is called once per frame

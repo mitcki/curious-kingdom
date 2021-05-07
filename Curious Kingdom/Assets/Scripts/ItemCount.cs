@@ -50,6 +50,8 @@ public class ItemCount : MonoBehaviour
                 if(kingAnimation2){
                     kingAnimation2.GetComponent<SwfClipController>().Play(false);
                 }
+                GameObject replayKing = GameObject.Find("KING_REPLAY.fla.KING_REPLAY");
+                replayKing.GetComponent<MeshRenderer>().enabled = false;
 
                 
                 StartCoroutine(nextLevel());
@@ -80,8 +82,15 @@ public class ItemCount : MonoBehaviour
             levelLoader.GetComponent<LevelLoader>().LoadNextLevel("TowerGame-"+gameLevels[gameLevel]);
         } else {
             GameObject replay = GameObject.Find("Replay");
-            replay.GetComponent<SpriteRenderer>().enabled = true;
             replay.GetComponent<BoxCollider2D>().enabled = true;
+            GameObject replayKing = GameObject.Find("KING_REPLAY.fla.KING_REPLAY");
+            replayKing.GetComponent<MeshRenderer>().enabled = true;
+            replayKing.GetComponent<SwfClipController>().Play(false);
+
+            GameObject kingJump = GameObject.Find("KING_JUMP_V1.fla.KING_JUMP_V1");
+            kingJump.GetComponent<MeshRenderer>().enabled = false;
+
+
         }
     }
     private void OnTriggerExit2D(Collider2D other) {

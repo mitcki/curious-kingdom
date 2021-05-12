@@ -11,7 +11,7 @@ public class ItemCount : MonoBehaviour
     public int badItemCount = 0;
     public static int totalItems = 0;
     public static int gameLevel = 0;
-    public int[] gameLevels;
+    public static int[] gameLevels;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +26,7 @@ public class ItemCount : MonoBehaviour
         // gos = GameObject.FindGameObjectsWithTag("GoodItem");
         // totalItems = gos.Length;
 
-        Debug.Log(gameLevels[1]);
+        // Debug.Log(gameLevels[1]);
         // totalItems = 0;
     }
 
@@ -42,17 +42,9 @@ public class ItemCount : MonoBehaviour
             itemCount++;
             if(itemCount == totalItems){
                 Debug.Log("Win");
-                GameObject kingAnimation = GameObject.Find("KING_JUMP_V1.fla.KING_JUMP_V1");
-                if(kingAnimation){
-                    kingAnimation.GetComponent<SwfClipController>().Play(false);
-                }
-                GameObject kingAnimation2 = GameObject.Find("KING_JUMP_V2.fla.KING_JUMP_V3");
-                if(kingAnimation2){
-                    kingAnimation2.GetComponent<SwfClipController>().Play(false);
-                }
-                GameObject replayKing = GameObject.Find("KING_REPLAY.fla.KING_REPLAY");
-                replayKing.GetComponent<MeshRenderer>().enabled = false;
-
+                
+                TowerKing towerKing = GameObject.Find("TowerKing").GetComponent<TowerKing>();
+                towerKing.Jump();
                 
                 StartCoroutine(nextLevel());
                 GoodItem.randomVeggie = "";
@@ -81,14 +73,9 @@ public class ItemCount : MonoBehaviour
             GameObject levelLoader = GameObject.Find("LevelLoader");
             levelLoader.GetComponent<LevelLoader>().LoadNextLevel("TowerGame-"+gameLevels[gameLevel]);
         } else {
-            GameObject replay = GameObject.Find("Replay");
-            replay.GetComponent<BoxCollider2D>().enabled = true;
-            GameObject replayKing = GameObject.Find("KING_REPLAY.fla.KING_REPLAY");
-            replayKing.GetComponent<MeshRenderer>().enabled = true;
-            replayKing.GetComponent<SwfClipController>().Play(false);
-
-            GameObject kingJump = GameObject.Find("KING_JUMP_V1.fla.KING_JUMP_V1");
-            kingJump.GetComponent<MeshRenderer>().enabled = false;
+            
+            TowerKing towerKing = GameObject.Find("TowerKing").GetComponent<TowerKing>();
+            towerKing.Replay();
 
 
         }

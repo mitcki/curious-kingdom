@@ -9,9 +9,9 @@ public class LevelText : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("here");
+        // Debug.Log("here");
         levelDisplay = GetComponent<TextMeshProUGUI>();
-        levelDisplay.text = "Level: " + ItemCount.gameLevel;
+        levelDisplay.text = "Level: " + ItemCount.gameLevels[ItemCount.gameLevel];
     }
 
     // Update is called once per frame

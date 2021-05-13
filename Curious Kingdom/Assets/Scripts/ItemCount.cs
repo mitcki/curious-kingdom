@@ -89,7 +89,7 @@ public class ItemCount : MonoBehaviour
             gameLevel++;
             if(gameLevel > 3){
                 GameObject levelLoader1 = GameObject.Find("LevelLoader");
-                levelLoader1.GetComponent<LevelLoader>().LoadNextLevel("Intro1");
+                levelLoader1.GetComponent<LevelLoader>().LoadNextLevel("Intro2");
             }
             // SceneManager.LoadScene("TowerGame-"+gameLevel);
             GameObject levelLoader = GameObject.Find("LevelLoader");

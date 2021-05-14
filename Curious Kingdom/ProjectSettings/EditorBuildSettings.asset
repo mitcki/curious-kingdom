@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/PickleGame.unity
     guid: c3fe945bf31a1455485ac24faa79d16a
   - enabled: 1
@@ -38,6 +38,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TowerGame-10.unity
     guid: 67e7042ff27ff774c9b51be891c6c50e
+  - enabled: 1
+    path: Assets/Scenes/TestScene.unity
+    guid: 892b668a8aa47463e84244b355f36a1c
   - enabled: 1
     path: Assets/Scenes/TowerGame-11.unity
     guid: 19a60a04761d11a4096cb6a3bc3d23b9

@@ -37,12 +37,13 @@ public class GameStatus : MonoBehaviour
     }
     IEnumerator placeFirstJar()
     {
-        yield return new WaitForSeconds(3);
+        yield return new WaitForSeconds(14);
+        GameObject.Find("VO").GetComponent<AudioSource>().Play();
         GameObject.Find("pickle-jar-"+firstNumber).GetComponent<DragAndDrop>().MoveToBasket();
     }
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(Random.Range(3, 10));
+
     }
 }

@@ -9,6 +9,7 @@ public class GameStatus : MonoBehaviour
      public TextMeshProUGUI resultDisplay;
     public TextMeshProUGUI neededPickles;
     public static int score;
+    public static int wins = 0;
     public static int jar1;
     public static int jar2;
     public static int dropCount;
@@ -37,7 +38,14 @@ public class GameStatus : MonoBehaviour
     }
     IEnumerator placeFirstJar()
     {
-        yield return new WaitForSeconds(14);
+        if(PickleBasket.seenOnce == false){
+            PickleBasket.seenOnce = true;
+
+            yield return new WaitForSeconds(14);
+        } else {
+            yield return new WaitForSeconds(2);
+        }
+        
         GameObject.Find("VO").GetComponent<AudioSource>().Play();
         GameObject.Find("pickle-jar-"+firstNumber).GetComponent<DragAndDrop>().MoveToBasket();
     }

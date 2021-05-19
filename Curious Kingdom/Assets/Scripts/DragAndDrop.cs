@@ -142,7 +142,12 @@ public class DragAndDrop : MonoBehaviour
             pickleCount = 0;
             GameStatus.score = 0;
             GameStatus.dropCount = 0;
-            SceneManager.LoadScene("PickleGame");
+            GameStatus.wins += 1;
+            if(GameStatus.wins == 3){
+                SceneManager.LoadScene("Intro2");
+            } else {
+                SceneManager.LoadScene("PickleGame");
+            }
         } else {
             yield return new WaitForSeconds(2);
             resultDisplay.text = "Try Again!";

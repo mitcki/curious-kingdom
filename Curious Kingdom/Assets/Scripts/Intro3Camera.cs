@@ -28,7 +28,6 @@ public class Intro3Camera : MonoBehaviour
         
 
 
-    //     animator.Play("CameraTruckRight");
         StartCoroutine(PaperBall());
     //     StartCoroutine(StartCastleIcon());
 
@@ -40,6 +39,9 @@ public class Intro3Camera : MonoBehaviour
         GameObject paperBall = GameObject.Find("king_paperball_6");
         paperBall.GetComponent<SpriteRenderer>().enabled = true;
         paperBall.GetComponent<Animator>().enabled = true;
+
+        animator.Play("CameraTruckRight3");
+
 
     //    GameObject kingSwf = GameObject.Find("KING_SEQ09.fla.KING_SEQ09");
         GameObject kingAnimation = GameObject.Find("KING_SEQ13.fla.KING_SEQ13");

@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class KingPaperBall : MonoBehaviour
 {
     public GameObject nextKing;
@@ -21,7 +21,14 @@ public class KingPaperBall : MonoBehaviour
         if (message.Equals("ReversedAnimationEnded"))
         {
             GetComponent<SpriteRenderer>().enabled = false;
-            Instantiate(nextKing);
+            if(nextKing){
+                Instantiate(nextKing);
+            }
+        }
+        if (message.Equals("ReversedAnimationEnded3"))
+        {
+            GetComponent<SpriteRenderer>().enabled = false;
+            SceneManager.LoadScene("Dungeon-1");
         }
     }
 }

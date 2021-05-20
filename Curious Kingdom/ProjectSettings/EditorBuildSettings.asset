@@ -89,19 +89,19 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TowerGame-25.unity
     guid: 4e450cb146a7c46429fa3bc4805b1d6e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Dungeon-1.unity
     guid: ab570d1f66849364d9eccad31ad2a964
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Dungeon-2.unity
     guid: e0db16f26ae1a4540a0dcc55cbc508df
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Dungeon-3.unity
     guid: a8b96f9aac65e974a985fdfcea996605
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Dungeon-4.unity
     guid: 2532e7ae877aa8843a5c3a757d2bf786
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/ARScene.unity
     guid: b1347c4450ac24988932cf89468bbbd8
   - enabled: 1

@@ -22,8 +22,8 @@ public class ItemCount : MonoBehaviour
         gameLevels[2] = Random.Range(14, 19);
         gameLevels[3] = Random.Range(20,25);
 
-        GameObject flames = GameObject.Find("Flame.fla.Flame");
-        flames.GetComponent<MeshRenderer>().enabled = false;
+        // GameObject flames = GameObject.Find("Flame.fla.Flame");
+        // flames.GetComponent<MeshRenderer>().enabled = false;
         //  = {1,Random.Range(7,13),Random.Range(14, 19),Random.Range(20,25)}
         // GameObject[] gos;
         // gos = GameObject.FindGameObjectsWithTag("GoodItem");
@@ -42,6 +42,7 @@ public class ItemCount : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.tag == "GoodItem")
         {
+            
             itemCount++;
             if(itemCount == totalItems){
                 if(badItemCount == 0){

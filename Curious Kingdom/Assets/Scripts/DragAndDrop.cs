@@ -144,7 +144,7 @@ public class DragAndDrop : MonoBehaviour
             GameStatus.dropCount = 0;
             GameStatus.wins += 1;
             if(GameStatus.wins == 3){
-                SceneManager.LoadScene("Intro2");
+                SceneManager.LoadScene("Intro3");
             } else {
                 SceneManager.LoadScene("PickleGame");
             }

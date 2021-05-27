@@ -24,7 +24,7 @@ public class MenuKing : MonoBehaviour
             if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(mousePos))
             {
                 GameObject levelLoader = GameObject.Find("LevelLoader");
-                levelLoader.GetComponent<LevelLoader>().LoadNextLevel("Intro3");
+                levelLoader.GetComponent<LevelLoader>().LoadNextLevel("ARScene");
 
             }
             else

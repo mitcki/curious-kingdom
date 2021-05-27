@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6857610436319895291}
   - component: {fileID: 4451300897031179595}
   - component: {fileID: 8485910441072408272}
+  - component: {fileID: 6401459084686422710}
   m_Layer: 0
   m_Name: Flame.fla.Flame
   m_TagString: Untagged
@@ -61,7 +62,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: d58d9a5e482e8429f8d7d18a9538d94a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -129,3 +130,15 @@ MonoBehaviour:
   _groupName: 
   _playMode: 0
   _loopMode: 1
+--- !u!114 &6401459084686422710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1579354167847435949}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 61ce4a69e345a41bf8dc53f3cd3e3f8f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

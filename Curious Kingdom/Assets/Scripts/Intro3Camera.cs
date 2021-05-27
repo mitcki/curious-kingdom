@@ -61,14 +61,14 @@ public class Intro3Camera : MonoBehaviour
         // paperBall.GetComponent<SpriteRenderer>().enabled = true;
         // paperBall.GetComponent<Animator>().enabled = true;
 
-         StartCoroutine(StartLevelDelay());
+        //  StartCoroutine(StartLevelDelay());
      }
 
      IEnumerator StartLevelDelay()
      {
          yield return new WaitForSeconds(31f);
          GameObject levelLoader = GameObject.Find("LevelLoader");
-         levelLoader.GetComponent<LevelLoader>().LoadNextLevel("PickleGame");
+         levelLoader.GetComponent<LevelLoader>().LoadNextLevel("DiningRoom");
 
      }
 

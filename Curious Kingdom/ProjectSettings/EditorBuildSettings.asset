@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu.unity
+    guid: 6a47071985f494571b5d3ae00f5a1cd8
+  - enabled: 1
     path: Assets/Scenes/PickleGame.unity
     guid: c3fe945bf31a1455485ac24faa79d16a
   - enabled: 1
@@ -20,6 +23,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/TowerGame-3.unity
     guid: 95166a5892000ba4d893f27dc958c947
+  - enabled: 1
+    path: Assets/Scenes/DungeonIntro.unity
+    guid: 6f9237031bd9c4e1299da72c298cd084
   - enabled: 1
     path: Assets/Scenes/TowerGame-5.unity
     guid: 06f09db224b0614409ea257e67134e8e
@@ -105,14 +111,17 @@ EditorBuildSettings:
     path: Assets/Scenes/ARScene.unity
     guid: b1347c4450ac24988932cf89468bbbd8
   - enabled: 1
-    path: Assets/Scenes/Menu.unity
-    guid: 6a47071985f494571b5d3ae00f5a1cd8
+    path: Assets/Scenes/DiningRoom.unity
+    guid: b691e2418548441fa813993be033aa99
   - enabled: 1
     path: Assets/Scenes/Intro1.unity
     guid: 1ff83d3136d04405f883e8cee9e15ad9
   - enabled: 1
     path: Assets/Scenes/Intro2.unity
     guid: 8c188dfd41fad44a8b25025cfc814f19
+  - enabled: 1
+    path: Assets/Scenes/DiningEnd.unity
+    guid: a1e79727666c34dbeb1a6a6e23633958
   m_configObjects:
     UnityEditor.XR.ARKit.ARKitSettings: {fileID: 11400000, guid: 109a5252a8e494785af6fea653f07113,
       type: 2}

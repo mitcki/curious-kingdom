@@ -29,11 +29,13 @@ public class DungeonDoor : MonoBehaviour
         yield return new WaitForSeconds(1);
         
             gameLevel++;
-            if(gameLevel > 4){
-                gameLevel = 1;
+            if(gameLevel > 1){
+                // gameLevel = 1;
+                GameObject levelLoader = GameObject.Find("LevelLoader");
+                levelLoader.GetComponent<LevelLoader>().LoadNextLevel("DiningEnd");
             }
             Ketchup.Found = false;
-            SceneManager.LoadScene("Dungeon-"+gameLevel);
+            // SceneManager.LoadScene("Dungeon-"+gameLevel);
 
         
     }

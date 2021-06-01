@@ -11,6 +11,12 @@ public class DiningRoom : MonoBehaviour
     void Start()
     {
         StartCoroutine(ShowMap());
+        StartCoroutine(HideObjects());
+        
+    }
+    IEnumerator HideObjects()
+    {
+        yield return new WaitForSeconds(0.05f);
         GameObject kingPt2 = GameObject.Find("KING_SEQ19.fla.KING_SEQ19");
         kingPt2.GetComponent<MeshRenderer>().enabled = false;
 
@@ -19,6 +25,7 @@ public class DiningRoom : MonoBehaviour
 
         GameObject queenPt2 = GameObject.Find("QUEEN_SEQ19.fla.QUEEN_SEQ19");
         queenPt2.GetComponent<MeshRenderer>().enabled = false;
+
     }
 
     IEnumerator ShowMap()

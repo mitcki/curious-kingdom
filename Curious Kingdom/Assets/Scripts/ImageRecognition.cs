@@ -25,14 +25,14 @@ public class ImageRecognition : MonoBehaviour
     public void OnImageChanged(ARTrackedImagesChangedEventArgs args){
         foreach (var trackedImage in args.added){
             Debug.Log(trackedImage.name);
-            StartCoroutine(HideObjects());
+            StartCoroutine(StartGame());
         }
     }
-    IEnumerator HideObjects()
+    IEnumerator StartGame()
     {
-        yield return new WaitForSeconds(3f);
-            SceneManager.LoadScene("Intro1");
-
+        yield return new WaitForSeconds(7f);
+        // PlayerPrefs.SetInt("UnlockedKing", 1);
+        SceneManager.LoadScene("Intro1");
 
     }
     // Start is called before the first frame update

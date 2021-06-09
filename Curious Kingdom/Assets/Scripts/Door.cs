@@ -14,9 +14,10 @@ public class Door : MonoBehaviour
     void Update()
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Transform touchArea = transform.Find("TouchArea");
         if (Input.GetMouseButtonDown(0) || Input.touchCount == 1)
         {
-            if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(mousePos))
+            if (touchArea.GetComponent<Collider2D>() == Physics2D.OverlapPoint(mousePos) || GetComponent<Collider2D>() == Physics2D.OverlapPoint(mousePos))
             {
                 JointMotor2D motor = GetComponent<HingeJoint2D>().motor;
                 motor.motorSpeed *= -1;

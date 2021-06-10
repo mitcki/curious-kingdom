@@ -9,7 +9,7 @@ public class Sticks : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameObject flames = GameObject.Find("Flame.fla.Flame");
+        GameObject flames = GameObject.Find("Pepper Burning Up.fla.PepperBurningUp");
         flames.GetComponent<MeshRenderer>().enabled = false;
     }
 private void OnCollisionEnter2D(Collision2D other) {
@@ -20,11 +20,13 @@ private void OnCollisionEnter2D(Collision2D other) {
         }
         if(other.gameObject.tag == "BadItem")
         {
-            Destroy(gameObject, 2.0f);
             Destroy(other.gameObject);
-            GameObject flames = GameObject.Find("Flame.fla.Flame");
+            GetComponent<SpriteRenderer>().enabled = false;
+            GameObject flames = GameObject.Find("Pepper Burning Up.fla.PepperBurningUp");
             flames.GetComponent<MeshRenderer>().enabled = true;
             flames.GetComponent<SwfClipController>().Play(false);
+            Destroy(gameObject, 1.0f);
+
         }
         
     }

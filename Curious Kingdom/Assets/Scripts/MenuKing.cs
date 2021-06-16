@@ -6,16 +6,17 @@ using UnityEngine.SceneManagement;
 public class MenuKing : MonoBehaviour
 {
     // Start is called before the first frame update
+    private Camera cam;
     void Start()
     {
-        
+        cam = Camera.main;
     }
 
     // Update is called once per frame
     void Update()
     {
         Vector3 pos = Input.mousePosition;
-        pos.z = 10;
+        pos.z = 6;
         Vector3 mousePos = Camera.main.ScreenToWorldPoint(pos);
 
         if (Input.GetMouseButtonDown(0) || Input.touchCount == 1)

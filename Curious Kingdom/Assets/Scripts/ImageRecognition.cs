@@ -23,7 +23,7 @@ public class ImageRecognition : MonoBehaviour
     }
 
     public void OnImageChanged(ARTrackedImagesChangedEventArgs args){
-        foreach (var trackedImage in args.added){
+        foreach (var trackedImage in args.updated){
             Debug.Log(trackedImage.name);
             StartCoroutine(StartGame());
         }

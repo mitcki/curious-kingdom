@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TiltDoor : MonoBehaviour
 {
+    private bool doorStarted = false;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -14,9 +16,10 @@ public class TiltDoor : MonoBehaviour
     void Update()
     {
         Vector2 mousePos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        if (Input.GetMouseButtonDown(0) || Input.touchCount == 1)
+        Transform touchArea = transform.Find("TouchArea");
+        if ((Input.GetMouseButtonDown(0) || Input.touchCount == 1) && doorStarted == false)
         {
-            if (GetComponent<Collider2D>() == Physics2D.OverlapPoint(mousePos))
+            if (touchArea.GetComponent<Collider2D>() == Physics2D.OverlapPoint(mousePos) || GetComponent<Collider2D>() == Physics2D.OverlapPoint(mousePos))
             {
                 JointMotor2D motor = GetComponent<HingeJoint2D>().motor;
                 motor.motorSpeed *= -1;
@@ -24,7 +27,8 @@ public class TiltDoor : MonoBehaviour
                 GetComponent<HingeJoint2D>().motor = motor;
                 StartCoroutine(activateMotor());
                 GetComponent<HingeJoint2D>().useMotor = false;
-
+                doorStarted = true;
+                StartCoroutine(resetFlag());
 
             }
             else
@@ -38,5 +42,12 @@ public class TiltDoor : MonoBehaviour
         yield return new WaitForSeconds(0.15f);
 
         GetComponent<HingeJoint2D>().useMotor = true;
+    }
+
+    IEnumerator resetFlag()
+    {
+        yield return new WaitForSeconds(1.0f);
+
+        doorStarted = false;
     }
 }

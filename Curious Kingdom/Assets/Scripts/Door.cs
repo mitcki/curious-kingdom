@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Door : MonoBehaviour
 {
+    private bool doorStarted = false;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +18,7 @@ public class Door : MonoBehaviour
         Transform touchArea = transform.Find("TouchArea");
         if (Input.GetMouseButtonDown(0) || Input.touchCount == 1)
         {
-            if (touchArea.GetComponent<Collider2D>() == Physics2D.OverlapPoint(mousePos) || GetComponent<Collider2D>() == Physics2D.OverlapPoint(mousePos))
+            if ((touchArea.GetComponent<Collider2D>() == Physics2D.OverlapPoint(mousePos) || GetComponent<Collider2D>() == Physics2D.OverlapPoint(mousePos)) && doorStarted == false)
             {
                 JointMotor2D motor = GetComponent<HingeJoint2D>().motor;
                 motor.motorSpeed *= -1;
@@ -25,7 +26,8 @@ public class Door : MonoBehaviour
                 GetComponent<HingeJoint2D>().motor = motor;
                 StartCoroutine(activateMotor());
                 GetComponent<HingeJoint2D>().useMotor = false;
-
+                doorStarted = true;
+                StartCoroutine(resetFlag());
 
             }
             else
@@ -39,5 +41,12 @@ public class Door : MonoBehaviour
         yield return new WaitForSeconds(0.15f);
 
         GetComponent<HingeJoint2D>().useMotor = true;
+    }
+
+    IEnumerator resetFlag()
+    {
+        yield return new WaitForSeconds(1.0f);
+
+        doorStarted = false;
     }
 }

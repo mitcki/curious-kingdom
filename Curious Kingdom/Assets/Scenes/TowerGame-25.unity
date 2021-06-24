@@ -206,6 +206,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3797943413470899286, guid: 91da3d10a4d8bea40a327ee1ea212305,
+        type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: 6977ca344c9404f448614242a4869798, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 91da3d10a4d8bea40a327ee1ea212305, type: 3}
 --- !u!1001 &101276433
@@ -559,12 +564,12 @@ PrefabInstance:
     - target: {fileID: 1117229002742999497, guid: 59c51533ace1699429aeffd3eef88eb5,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.18637536
+      value: 0.20281367
       objectReference: {fileID: 0}
     - target: {fileID: 1117229002742999497, guid: 59c51533ace1699429aeffd3eef88eb5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.7284
+      value: -2.6578
       objectReference: {fileID: 0}
     - target: {fileID: 1117229002742999497, guid: 59c51533ace1699429aeffd3eef88eb5,
         type: 3}
@@ -2788,7 +2793,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!223 &1706559776
 Canvas:
   m_ObjectHideFlags: 0

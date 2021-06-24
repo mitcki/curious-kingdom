@@ -14,6 +14,8 @@ public class IntroCamera : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         StartCoroutine(DelayedAnimation());
+        Music.player.StopMusic();
+
     }
 
     IEnumerator DelayedAnimation ()
@@ -32,6 +34,8 @@ public class IntroCamera : MonoBehaviour
         StartCoroutine(ShowQueenDelay());
         StartCoroutine(StartCastleIcon());
 
+        Music.player.PlayMusic(2);
+
      }
     IEnumerator StartCastleIcon(){
         yield return new WaitForSeconds(1.3f);
@@ -47,6 +51,8 @@ public class IntroCamera : MonoBehaviour
         paperBall.GetComponent<Animator>().enabled = true;
 
          StartCoroutine(StartLevelDelay());
+
+         Music.player.StopMusic();
      }
 
      IEnumerator StartLevelDelay()

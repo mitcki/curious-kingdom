@@ -18,6 +18,9 @@ public class GameStatus : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if(Music.player){
+            Music.player.PlayMusic(4);
+        }
         picklesNeededCount = Random.Range(3, 10);
         firstNumber = Random.Range(1, picklesNeededCount-1);
         if(firstNumber > 1 && picklesNeededCount-firstNumber == firstNumber){

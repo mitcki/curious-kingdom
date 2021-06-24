@@ -14,13 +14,13 @@ public class Grabber : MonoBehaviour
     }
     IEnumerator initVeggies()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.25f);
         gos = GameObject.FindGameObjectsWithTag("GoodItem");
         StartCoroutine(cueNextVeggie());
 
     }
     IEnumerator cueNextVeggie(){
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.25f);
         gos[count].transform.position = transform.position;
         gos[count].transform.position += new Vector3(0,-0.4f,0);
         gos[count].transform.SetParent(gameObject.transform);

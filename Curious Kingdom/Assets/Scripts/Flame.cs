@@ -13,7 +13,7 @@ public class Flame : MonoBehaviour
     }
     IEnumerator hideFlame()
     {
-        yield return new WaitForSeconds(0.25f);
+        yield return new WaitForSeconds(0.5f);
         GetComponent<MeshRenderer>().enabled = false;
 
     }

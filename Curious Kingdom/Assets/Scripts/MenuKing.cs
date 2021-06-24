@@ -10,6 +10,7 @@ public class MenuKing : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
+        Music.player.PlayMusic(0);
     }
 
     // Update is called once per frame
@@ -28,6 +29,12 @@ public class MenuKing : MonoBehaviour
 
                 if(PlayerPrefs.GetInt("UnlockedKing") == 0){
                     levelLoader.GetComponent<LevelLoader>().LoadNextLevel("ARScene");
+                    // levelLoader.GetComponent<LevelLoader>().LoadNextLevel("Dungeon-1");
+                    // levelLoader.GetComponent<LevelLoader>().LoadNextLevel("TowerGame-1");
+                    // levelLoader.GetComponent<LevelLoader>().LoadNextLevel("Intro1");
+                    // levelLoader.GetComponent<LevelLoader>().LoadNextLevel("Intro2");
+                    // levelLoader.GetComponent<LevelLoader>().LoadNextLevel("Intro3");
+                    // levelLoader.GetComponent<LevelLoader>().LoadNextLevel("PickleGame");
                 }
                 if(PlayerPrefs.GetInt("UnlockedKing") == 1){
                     levelLoader.GetComponent<LevelLoader>().LoadNextLevel("Intro1");

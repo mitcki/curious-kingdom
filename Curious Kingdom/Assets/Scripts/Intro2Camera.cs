@@ -14,6 +14,7 @@ public class Intro2Camera : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         StartCoroutine(DelayedAnimation());
+        Music.player.StopMusic();
     }
 
     IEnumerator DelayedAnimation ()
@@ -31,10 +32,12 @@ public class Intro2Camera : MonoBehaviour
         animator.Play("CameraTruckRight");
         StartCoroutine(StartLevelDelay());
         StartCoroutine(StartCastleIcon());
+        Music.player.PlayMusic(3);
 
      }
     IEnumerator StartCastleIcon(){
         yield return new WaitForSeconds(12.5f);
+        Music.player.StopMusic();
         Instantiate(IconCastle);
 
         

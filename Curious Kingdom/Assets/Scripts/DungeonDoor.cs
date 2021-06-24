@@ -9,7 +9,7 @@ public class DungeonDoor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Music.player.PlayMusic(5);
     }
 
     // Update is called once per frame

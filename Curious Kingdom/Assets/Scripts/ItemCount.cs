@@ -8,7 +8,7 @@ using FTRuntime.Yields;
 public class ItemCount : MonoBehaviour
 {
     public int itemCount = 0;
-    public int badItemCount = 0;
+    public static int badItemCount = 0;
     public static int totalItems = 0;
     public static int gameLevel = 0;
     public static int[] gameLevels;
@@ -21,6 +21,8 @@ public class ItemCount : MonoBehaviour
         gameLevels[1] = Random.Range(7,13);
         gameLevels[2] = Random.Range(14, 19);
         gameLevels[3] = Random.Range(20,25);
+
+        badItemCount = 0;
 
         // GameObject flames = GameObject.Find("Flame.fla.Flame");
         // flames.GetComponent<MeshRenderer>().enabled = false;

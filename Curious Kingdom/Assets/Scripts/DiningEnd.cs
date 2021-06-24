@@ -10,6 +10,7 @@ public class DiningEnd : MonoBehaviour
     void Start()
     {
         StartCoroutine(AnimateTable());
+        Music.player.StopMusic();
     }
     IEnumerator AnimateTable()
      {

@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-
+using FTRuntime;
+using FTRuntime.Yields;
 
 public class GameStatus : MonoBehaviour
 {
@@ -27,11 +28,11 @@ public class GameStatus : MonoBehaviour
             firstNumber -= 1;
         }
         resultDisplay = GameObject.Find("Canvas").transform.Find("resultDisplay").GetComponent<TextMeshProUGUI>();
-        neededPickles = GameObject.Find("Canvas").transform.Find("neededPickles").GetComponent<TextMeshProUGUI>();
+        // neededPickles = GameObject.Find("Canvas").transform.Find("neededPickles").GetComponent<TextMeshProUGUI>();
 
         // picklesNeededCount = Random.Range(3, 9);
 
-        neededPickles.text = GameStatus.picklesNeededCount.ToString();
+        // neededPickles.text = GameStatus.picklesNeededCount.ToString();
 
         // resultDisplay.text = "? + ? = " + GameStatus.picklesNeededCount.ToString();
         resultDisplay.text = " " ;
@@ -51,6 +52,9 @@ public class GameStatus : MonoBehaviour
         
         GameObject.Find("VO").GetComponent<AudioSource>().Play();
         GameObject.Find("pickle-jar-"+firstNumber).GetComponent<DragAndDrop>().MoveToBasket();
+
+        GameObject castleAnimation = GameObject.Find("CASTLE-ICON_SEQ11.fla.CASTLE_ICON_SEQ11");
+        castleAnimation.GetComponent<SwfClipController>().Stop(false);
     }
     // Update is called once per frame
     void Update()

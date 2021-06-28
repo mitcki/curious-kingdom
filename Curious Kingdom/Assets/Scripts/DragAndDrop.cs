@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
 using TMPro;
+using FTRuntime;
+using FTRuntime.Yields;
 
 public class DragAndDrop : MonoBehaviour
 {
@@ -27,7 +29,7 @@ public class DragAndDrop : MonoBehaviour
         placed = false;
         startPosition = transform.position; 
         resultDisplay = GameObject.Find("Canvas").transform.Find("resultDisplay").GetComponent<TextMeshProUGUI>();
-        neededPickles = GameObject.Find("Canvas").transform.Find("neededPickles").GetComponent<TextMeshProUGUI>();
+        // neededPickles = GameObject.Find("Canvas").transform.Find("neededPickles").GetComponent<TextMeshProUGUI>();
 
         
         
@@ -52,6 +54,7 @@ public class DragAndDrop : MonoBehaviour
                 if (canMove)
                 {
                     dragging = true;
+                    Debug.Log("pickup");
                 }
             
 
@@ -68,13 +71,17 @@ public class DragAndDrop : MonoBehaviour
                 this.transform.position = Vector3.Lerp(this.transform.position, this.startPosition, Time.deltaTime * speed);
             }
         }
-        if (Input.GetMouseButtonUp(0) && Input.touchCount <= 0 )
+        if (Input.GetMouseButtonUp(0))
         {
             canMove = false;
             dragging = false;
 
         }
-
+        if (Input.touchSupported && Input.touchCount <= 0)
+        {
+            canMove = false;
+            dragging = false;
+        }
     }
     public void MoveToBasket (){
         dragging = false;
@@ -136,6 +143,11 @@ public class DragAndDrop : MonoBehaviour
     }
     IEnumerator checkResults(){
         if(GameStatus.score == GameStatus.picklesNeededCount){
+            GameObject castleAnimation = GameObject.Find("CASTLE-ICON_SEQ11.fla.CASTLE_ICON_SEQ11");
+            castleAnimation.GetComponent<SwfClipController>().GotoAndPlay(617);
+            castleAnimation.GetComponent<AudioSource>().clip = castleAnimation.GetComponent<AudioSources>().AudioFiles[1];
+            castleAnimation.GetComponent<AudioSource>().Play();
+            StartCoroutine(StopCastleAnimation(4.0f));
             yield return new WaitForSeconds(3);
             resultDisplay.text = "Correct!";
             yield return new WaitForSeconds(3);
@@ -149,17 +161,34 @@ public class DragAndDrop : MonoBehaviour
                 SceneManager.LoadScene("PickleGame");
             }
         } else {
+            
+            GameObject castleAnimation = GameObject.Find("CASTLE-ICON_SEQ11.fla.CASTLE_ICON_SEQ11");
+            castleAnimation.GetComponent<SwfClipController>().GotoAndPlay(445);
+            castleAnimation.GetComponent<AudioSource>().clip = castleAnimation.GetComponent<AudioSources>().AudioFiles[0];
+            castleAnimation.GetComponent<AudioSource>().Play();
+            StartCoroutine(StopCastleAnimation(6.0f));
             yield return new WaitForSeconds(2);
             resultDisplay.text = "Try Again!";
             yield return new WaitForSeconds(3);
-            pickleCount = 0;
-            GameStatus.score = 0;
-            GameStatus.dropCount = 0;
-            SceneManager.LoadScene("PickleGame");
+            // pickleCount = 0;
+            GameStatus.score -= this.pickleCount;
+            GameStatus.dropCount = 1;
+            // SceneManager.LoadScene("PickleGame");
+            if(this.transform.position != this.startPosition){
+                touchingBasket = false;
+                // this.transform.position = Vector3.Lerp(this.transform.position, this.startPosition, Time.deltaTime * speed);
+                resultDisplay.text = GameStatus.jar1 + " + ? = " + GameStatus.picklesNeededCount.ToString();
+                
+            }
         }
     }
+    IEnumerator StopCastleAnimation(float seconds){
+            yield return new WaitForSeconds(seconds);
+            GameObject castleAnimation = GameObject.Find("CASTLE-ICON_SEQ11.fla.CASTLE_ICON_SEQ11");
+            castleAnimation.GetComponent<SwfClipController>().Stop(false);
+    }
     private void OnCollisionExit2D(Collision2D other) {
-        touchingBasket = false;
+        // touchingBasket = false;
     }
 }
 

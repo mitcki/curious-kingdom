@@ -29,7 +29,7 @@ public class TiltDoor : MonoBehaviour
                 GetComponent<HingeJoint2D>().useMotor = false;
                 doorStarted = true;
                 StartCoroutine(resetFlag());
-
+                gameObject.GetComponent<AudioSource>().Play();
             }
             else
             {

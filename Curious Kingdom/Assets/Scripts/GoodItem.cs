@@ -29,7 +29,7 @@ public class GoodItem : MonoBehaviour
         newVeggie.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
         ItemCount.totalItems ++;
     }
-
+    
     // Update is called once per frame
     void Update()
     {

@@ -93,10 +93,12 @@ public class ItemCount : MonoBehaviour
             if(gameLevel > 3){
                 GameObject levelLoader1 = GameObject.Find("LevelLoader");
                 levelLoader1.GetComponent<LevelLoader>().LoadNextLevel("Intro2");
+            } else {
+                // SceneManager.LoadScene("TowerGame-"+gameLevel);
+                GameObject levelLoader = GameObject.Find("LevelLoader");
+                levelLoader.GetComponent<LevelLoader>().LoadNextLevel("TowerGame-"+gameLevels[gameLevel]);
             }
-            // SceneManager.LoadScene("TowerGame-"+gameLevel);
-            GameObject levelLoader = GameObject.Find("LevelLoader");
-            levelLoader.GetComponent<LevelLoader>().LoadNextLevel("TowerGame-"+gameLevels[gameLevel]);
+            
     }
     private void OnTriggerExit2D(Collider2D other) {
         if(other.tag == "GoodItem") {

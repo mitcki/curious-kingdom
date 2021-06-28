@@ -18,6 +18,12 @@ public class PickleBasket : MonoBehaviour
             castleAnimation.GetComponent<AudioSource>().Play();
         } else {
             GameObject.Find("Main Camera").GetComponent<Animator>().enabled =false;
+
+            GameObject king = GameObject.Find("king-1");
+            king.GetComponent<AudioSource>().Stop();
+
+            GameObject castleAnimation = GameObject.Find("CASTLE-ICON_SEQ11.fla.CASTLE_ICON_SEQ11");
+            castleAnimation.GetComponent<SwfClipController>().Stop(false);
         }
     }
 

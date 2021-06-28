@@ -10,9 +10,12 @@ public class MenuKing : MonoBehaviour
     void Start()
     {
         cam = Camera.main;
+        StartCoroutine(startMusic());
+    }
+    IEnumerator startMusic(){
+        yield return new WaitForSeconds(0.25f);
         Music.player.PlayMusic(0);
     }
-
     // Update is called once per frame
     void Update()
     {

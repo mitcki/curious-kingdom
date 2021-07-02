@@ -37,7 +37,7 @@ public class Intro2Camera : MonoBehaviour
      }
     IEnumerator StartCastleIcon(){
         yield return new WaitForSeconds(12.5f);
-        Music.player.StopMusic();
+        // Music.player.StopMusic();
         Instantiate(IconCastle);
 
         

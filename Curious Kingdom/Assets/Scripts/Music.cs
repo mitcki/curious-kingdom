@@ -27,6 +27,7 @@ public class Music : MonoBehaviour
             Music.lastScene = musicID;
             gameObject.GetComponent<AudioSource>().clip = MusicFiles[musicID];
             gameObject.GetComponent<AudioSource>().Play();
+            gameObject.GetComponent<AudioSource>().loop = true;
         }
         
     }

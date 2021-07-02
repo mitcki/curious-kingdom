@@ -10,6 +10,7 @@ public class DragAndDrop : MonoBehaviour
 {
     bool canMove;
     bool dragging;
+    bool returned = true;
     public bool touchingBasket;
     bool placed;
     Vector3 startPosition;
@@ -54,7 +55,9 @@ public class DragAndDrop : MonoBehaviour
                 if (canMove)
                 {
                     dragging = true;
+                    returned = false;
                     Debug.Log("pickup");
+                    SFX.player.PlaySound(0);
                 }
             
 
@@ -68,7 +71,14 @@ public class DragAndDrop : MonoBehaviour
             this.transform.position = mousePos;
         } else {
             if(this.transform.position != this.startPosition){
-                this.transform.position = Vector3.Lerp(this.transform.position, this.startPosition, Time.deltaTime * speed);
+                // this.transform.position = Vector3.Lerp(this.transform.position, this.startPosition, Time.deltaTime * speed);
+                this.transform.position = Vector3.Lerp(this.transform.position, this.startPosition, 0.5f);
+                returned = false;
+
+            }
+            if(this.transform.position == this.startPosition && returned == false){
+                returned = true;
+                SFX.player.PlaySound(2);
             }
         }
         if (Input.GetMouseButtonUp(0))
@@ -87,6 +97,7 @@ public class DragAndDrop : MonoBehaviour
         dragging = false;
         if(placed == false){
             gameObject.GetComponent<SpriteRenderer>().sortingOrder = 1;
+            SFX.player.PlaySound(1);
             Vector3 newLoc;
             if(GameStatus.dropCount < 2){
                 newLoc = GameObject.Find("basket-front").transform.position;
@@ -150,6 +161,7 @@ public class DragAndDrop : MonoBehaviour
             StartCoroutine(StopCastleAnimation(4.0f));
             yield return new WaitForSeconds(3);
             resultDisplay.text = "Correct!";
+            SFX.player.PlaySound(3);
             yield return new WaitForSeconds(3);
             pickleCount = 0;
             GameStatus.score = 0;

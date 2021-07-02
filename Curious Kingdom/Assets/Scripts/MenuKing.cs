@@ -30,8 +30,22 @@ public class MenuKing : MonoBehaviour
             {
                 GameObject levelLoader = GameObject.Find("LevelLoader");
 
+            
                 if(PlayerPrefs.GetInt("UnlockedKing") == 0){
-                    levelLoader.GetComponent<LevelLoader>().LoadNextLevel("ARScene");
+                    // if(PlayerPrefs.GetInt("CameraPermission") == 0){
+                        if(ScanAudio.panel.activeSelf != true && ScanAudio.playsetPanel.activeSelf != true){
+                            AudioSource voAudio = GameObject.Find("AudioControls").GetComponent<AudioSource>();
+                            AudioSources clips = GameObject.Find("AudioControls").GetComponent<AudioSources>();
+                            voAudio.clip = clips.AudioFiles[0];
+                            voAudio.Play();
+                            ScanAudio.panel.SetActive(true);
+                        }
+                        
+                    // } else {
+                        // levelLoader.GetComponent<LevelLoader>().LoadNextLevel("ARScene");
+                    // }
+                    
+                    // levelLoader.GetComponent<LevelLoader>().LoadNextLevel("ARScene");
                     // levelLoader.GetComponent<LevelLoader>().LoadNextLevel("Dungeon-1");
                     // levelLoader.GetComponent<LevelLoader>().LoadNextLevel("TowerGame-1");
                     // levelLoader.GetComponent<LevelLoader>().LoadNextLevel("Intro1");

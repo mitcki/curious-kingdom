@@ -31,7 +31,7 @@ public class ImageRecognition : MonoBehaviour
     IEnumerator StartGame()
     {
         yield return new WaitForSeconds(7f);
-        // PlayerPrefs.SetInt("UnlockedKing", 1);
+        PlayerPrefs.SetInt("UnlockedKing", 1);
         SceneManager.LoadScene("Intro1");
 
     }

@@ -17,7 +17,7 @@ public class DungeonIntro : MonoBehaviour
         yield return new WaitForSeconds(36f);
         GameObject levelLoader = GameObject.Find("LevelLoader");
 
-        levelLoader.GetComponent<LevelLoader>().LoadNextLevel("Dungeon-"+Random.Range(1,4));
+        levelLoader.GetComponent<LevelLoader>().LoadNextLevel("Dungeon-"+Random.Range(1,5));
 
      }
     // Update is called once per frame

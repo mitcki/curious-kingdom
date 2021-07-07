@@ -18,9 +18,13 @@ public class Ketchup : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D other) {
         // other.GetComponent<Rigidbody2D>().gravityScale = 0;
-        if(other.name == "king_torch"){
-            GameObject.Destroy(gameObject);
+        if(other.name == "king_torch" && Found == false){
+            // GameObject.Destroy(gameObject);
+            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<AudioSource>().Play();
+
             Found = true;
+
         }
     }
 

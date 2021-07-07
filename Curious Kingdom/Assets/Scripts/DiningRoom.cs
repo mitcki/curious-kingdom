@@ -12,7 +12,9 @@ public class DiningRoom : MonoBehaviour
     {
         StartCoroutine(ShowMap());
         StartCoroutine(HideObjects());
-        Music.player.StopMusic();
+        if(Music.player){
+            Music.player.StopMusic();
+        }
     }
     IEnumerator HideObjects()
     {

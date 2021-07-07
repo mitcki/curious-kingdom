@@ -9,7 +9,32 @@ public class DungeonDoor : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Music.player.PlayMusic(5);
+        if(Music.player){
+            Music.player.PlayMusic(5);
+        }
+
+        int ketchupNumber = Random.Range(1,5);
+
+        if(ketchupNumber == 1){
+            GameObject.Find("ketchup-2").SetActive(false);
+            GameObject.Find("ketchup-3").SetActive(false);
+            GameObject.Find("ketchup-4").SetActive(false);
+        }
+        if(ketchupNumber == 2){
+            GameObject.Find("ketchup-1").SetActive(false);
+            GameObject.Find("ketchup-3").SetActive(false);
+            GameObject.Find("ketchup-4").SetActive(false);
+        }
+        if(ketchupNumber == 3){
+            GameObject.Find("ketchup-1").SetActive(false);
+            GameObject.Find("ketchup-2").SetActive(false);
+            GameObject.Find("ketchup-4").SetActive(false);
+        }
+        if(ketchupNumber == 4){
+            GameObject.Find("ketchup-1").SetActive(false);
+            GameObject.Find("ketchup-2").SetActive(false);
+            GameObject.Find("ketchup-3").SetActive(false);
+        }
     }
 
     // Update is called once per frame
@@ -22,6 +47,7 @@ public class DungeonDoor : MonoBehaviour
         if(other.name == "king_torch" && Ketchup.Found == true){
             Debug.Log("Win");
             StartCoroutine(nextLevel());
+            GetComponent<AudioSource>().Play();
         }
     }
     IEnumerator nextLevel()

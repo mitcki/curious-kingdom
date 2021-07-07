@@ -860,7 +860,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b7e3f2c9869f460cbc82cb029c6d8f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: Dungeon-1
+  nextScene: DiningRoom
 --- !u!114 &686419955
 MonoBehaviour:
   m_ObjectHideFlags: 0

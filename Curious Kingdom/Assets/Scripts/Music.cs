@@ -25,11 +25,22 @@ public class Music : MonoBehaviour
     {
         if(Music.lastScene != musicID){
             Music.lastScene = musicID;
-            gameObject.GetComponent<AudioSource>().clip = MusicFiles[musicID];
-            gameObject.GetComponent<AudioSource>().Play();
-            gameObject.GetComponent<AudioSource>().loop = true;
+            
+            StartCoroutine(FadeAudioSource.StartFade(gameObject.GetComponent<AudioSource>(), 1.0f, 0f));
+            StartCoroutine(PlayNextTrack(1.0f, musicID));
         }
         
+    }
+    IEnumerator PlayNextTrack(float waitTime, int musicID){
+        yield return new WaitForSeconds(waitTime);
+
+        gameObject.GetComponent<AudioSource>().clip = MusicFiles[musicID];
+        gameObject.GetComponent<AudioSource>().Play();
+        gameObject.GetComponent<AudioSource>().loop = true;
+
+        StartCoroutine(FadeAudioSource.StartFade(gameObject.GetComponent<AudioSource>(), 1.0f, 0.5f));
+
+
     }
     public void StopMusic()
     {

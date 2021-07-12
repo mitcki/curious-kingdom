@@ -74,8 +74,31 @@ public class TowerKing : MonoBehaviour
 
             replay.GetComponent<AudioSource>().Play();
 
+            AudioSource voAudio = GameObject.Find("CastleAudio").GetComponent<AudioSource>();
+            AudioSources clips = GameObject.Find("CastleAudio").GetComponent<AudioSources>();
+            voAudio.clip = clips.AudioFiles[6];
+            voAudio.Play();
+
             hasReplayed = true;
+
+            StartCoroutine(PlayIdleVO());
+
         }
+        
+    }
+
+    IEnumerator PlayIdleVO(){
+        yield return new WaitForSeconds(10f);
+
+        AudioSource voAudio = GameObject.Find("CastleAudio").GetComponent<AudioSource>();
+        AudioSources clips = GameObject.Find("CastleAudio").GetComponent<AudioSources>();
+        int IncorrectClip = Random.Range(7,10);
+
+        voAudio.clip = clips.AudioFiles[IncorrectClip];
+        voAudio.Play();
+
+        StartCoroutine(PlayIdleVO());
+
         
     }
     // Update is called once per frame

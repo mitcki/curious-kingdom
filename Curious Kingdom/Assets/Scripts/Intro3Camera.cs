@@ -15,7 +15,9 @@ public class Intro3Camera : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         StartCoroutine(DelayedAnimation());
-        Music.player.StopMusic();
+        if(Music.player){
+            Music.player.PlayMusic(2);
+        }
     }
 
     IEnumerator DelayedAnimation ()
@@ -43,7 +45,7 @@ public class Intro3Camera : MonoBehaviour
 
         animator.Play("CameraTruckRight3");
 
-        Music.player.PlayMusic(2);
+        Music.player.PlayMusic(3);
 
 
     //    GameObject kingSwf = GameObject.Find("KING_SEQ09.fla.KING_SEQ09");

@@ -22,6 +22,7 @@ public class Veggie : MonoBehaviour
         if(other.gameObject.tag != "Grabber" && other.gameObject.tag != "BadItem" && soundFXSource)
         {
             if(rigidBody.velocity.y < -1.0f){
+                soundFXSource.pitch = Random.Range(0.75f, 1.25f);
                 soundFXSource.PlayOneShot(soundFXSource.clip, Mathf.Min(Mathf.Abs(rigidBody.velocity.y*0.1f), 1.0f));
             }
         }

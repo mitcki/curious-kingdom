@@ -17,6 +17,7 @@ private void OnCollisionEnter2D(Collision2D other) {
         {
             TowerKing towerKing = GameObject.Find("TowerKing").GetComponent<TowerKing>();
             towerKing.Replay();
+            
         }
         if(other.gameObject.tag == "BadItem")
         {

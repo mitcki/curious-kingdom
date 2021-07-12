@@ -21,8 +21,11 @@ public class BadItem : MonoBehaviour
                 TowerKing towerKing = GameObject.Find("TowerKing").GetComponent<TowerKing>();
                 towerKing.Replay();
                 ItemCount.badItemCount++;
+                
                 GameObject.Destroy(other.gameObject);
                 GameObject.Destroy(gameObject);
+
+
             }
             
         }

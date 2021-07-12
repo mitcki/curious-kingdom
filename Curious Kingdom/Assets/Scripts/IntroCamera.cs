@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using FTRuntime;
+using FTRuntime.Yields;
 
 
 public class IntroCamera : MonoBehaviour
@@ -14,10 +16,22 @@ public class IntroCamera : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         StartCoroutine(DelayedAnimation());
-        Music.player.StopMusic();
+        if(Music.player){
+            Music.player.PlayMusic(2);
+        }
+        
 
+        StartCoroutine(StartScene());
     }
+    IEnumerator StartScene(){
+        yield return new WaitForSeconds(0.25f);
 
+        GameObject.Find("CASTLE-BIG_SEQ01_OFFWEGO-new.fla.CASTLE_BIG_SEQ01_OFFWEGO").GetComponent<AudioSource>().Play();
+        GameObject.Find("CASTLE-BIG_SEQ01_OFFWEGO-new.fla.CASTLE_BIG_SEQ01_OFFWEGO").GetComponent<SwfClipController>().Play(false);
+
+        GameObject.Find("KING_SEQ01_OFFWEGO.fla.KING_SEQ01_OFFWEGO").GetComponent<AudioSource>().Play();
+        GameObject.Find("KING_SEQ01_OFFWEGO.fla.KING_SEQ01_OFFWEGO").GetComponent<SwfClipController>().Play(false);
+    }
     IEnumerator DelayedAnimation ()
      {
         yield return new WaitForSeconds(startDelay);
@@ -33,8 +47,9 @@ public class IntroCamera : MonoBehaviour
         animator.Play("CameraTruckRight");
         StartCoroutine(ShowQueenDelay());
         StartCoroutine(StartCastleIcon());
-
-        Music.player.PlayMusic(2);
+        if(Music.player){
+            Music.player.PlayMusic(3);
+        }
 
      }
     IEnumerator StartCastleIcon(){
@@ -52,7 +67,9 @@ public class IntroCamera : MonoBehaviour
 
          StartCoroutine(StartLevelDelay());
 
-         Music.player.StopMusic();
+        if(Music.player){
+            Music.player.PlayMusic(2);
+        }
      }
 
      IEnumerator StartLevelDelay()

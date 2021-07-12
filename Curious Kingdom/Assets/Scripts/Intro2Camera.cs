@@ -14,7 +14,9 @@ public class Intro2Camera : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         StartCoroutine(DelayedAnimation());
-        Music.player.StopMusic();
+        if(Music.player){
+            Music.player.PlayMusic(2);
+        }
     }
 
     IEnumerator DelayedAnimation ()

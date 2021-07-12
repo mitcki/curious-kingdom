@@ -23,6 +23,7 @@ public class Tower : MonoBehaviour
         if(other.gameObject.tag == "GoodItem"){
             TowerKing towerKing = GameObject.Find("TowerKing").GetComponent<TowerKing>();
             towerKing.Replay();
+            
         }
     }
 }

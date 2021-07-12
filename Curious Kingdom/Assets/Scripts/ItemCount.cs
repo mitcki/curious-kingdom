@@ -52,6 +52,12 @@ public class ItemCount : MonoBehaviour
                 
                     TowerKing towerKing = GameObject.Find("TowerKing").GetComponent<TowerKing>();
                     towerKing.Jump();
+
+                    AudioSource voAudio = GameObject.Find("CastleAudio").GetComponent<AudioSource>();
+                    AudioSources clips = GameObject.Find("CastleAudio").GetComponent<AudioSources>();
+                    int CorrectClip = Random.Range(0,6);
+                    voAudio.clip = clips.AudioFiles[CorrectClip];
+                    voAudio.Play();
                     
                     StartCoroutine(nextLevel());
                     GoodItem.randomVeggie = "";
@@ -59,6 +65,8 @@ public class ItemCount : MonoBehaviour
                 } else {
                     TowerKing towerKing = GameObject.Find("TowerKing").GetComponent<TowerKing>();
                     towerKing.Replay();
+
+                    
 
                     GameObject flames = GameObject.Find("Flame.fla.Flame");
                     flames.GetComponent<MeshRenderer>().enabled = true;

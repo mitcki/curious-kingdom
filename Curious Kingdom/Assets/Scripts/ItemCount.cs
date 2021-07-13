@@ -10,7 +10,7 @@ public class ItemCount : MonoBehaviour
     public int itemCount = 0;
     public static int badItemCount = 0;
     public static int totalItems = 0;
-    public static int gameLevel = 0;
+    public static int gameLevel = 1;
     public static int[] gameLevels;
     // Start is called before the first frame update
     void Start()
@@ -98,13 +98,14 @@ public class ItemCount : MonoBehaviour
     {
         yield return new WaitForSeconds(3);
             gameLevel++;
-            if(gameLevel > 3){
+            if(gameLevel > 25){
                 GameObject levelLoader1 = GameObject.Find("LevelLoader");
                 levelLoader1.GetComponent<LevelLoader>().LoadNextLevel("Intro2");
             } else {
                 // SceneManager.LoadScene("TowerGame-"+gameLevel);
                 GameObject levelLoader = GameObject.Find("LevelLoader");
-                levelLoader.GetComponent<LevelLoader>().LoadNextLevel("TowerGame-"+gameLevels[gameLevel]);
+                // levelLoader.GetComponent<LevelLoader>().LoadNextLevel("TowerGame-"+gameLevels[gameLevel]);
+                levelLoader.GetComponent<LevelLoader>().LoadNextLevel("TowerGame-"+gameLevel);
             }
             
     }

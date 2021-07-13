@@ -37,7 +37,7 @@ public class Intro3Camera : MonoBehaviour
      }
 
     IEnumerator PaperBall(){
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3.0f);
 
         GameObject paperBall = GameObject.Find("king_paperball_6");
         paperBall.GetComponent<SpriteRenderer>().enabled = true;
@@ -45,7 +45,9 @@ public class Intro3Camera : MonoBehaviour
 
         animator.Play("CameraTruckRight3");
 
-        Music.player.PlayMusic(3);
+        if(Music.player){
+            Music.player.PlayMusic(3);
+        }
 
 
     //    GameObject kingSwf = GameObject.Find("KING_SEQ09.fla.KING_SEQ09");

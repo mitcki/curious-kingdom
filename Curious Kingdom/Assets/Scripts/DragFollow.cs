@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DragFollow : MonoBehaviour
 {
-    Vector3 initialPos; Vector3 curPos; float speed = 2f;
+    Vector3 initialPos; Vector3 curPos; float speed = 3f;
     void Update () {
      if(Input.GetMouseButton(0)){
          curPos = Input.mousePosition;

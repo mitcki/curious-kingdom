@@ -11,7 +11,8 @@ public class LevelText : MonoBehaviour
     {
         // Debug.Log("here");
         levelDisplay = GetComponent<TextMeshProUGUI>();
-        levelDisplay.text = "Level: " + ItemCount.gameLevels[ItemCount.gameLevel];
+        // levelDisplay.text = "Level: " + ItemCount.gameLevels[ItemCount.gameLevel];
+        levelDisplay.text = "Level: " + ItemCount.gameLevel;
     }
 
     // Update is called once per frame

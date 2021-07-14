@@ -24,8 +24,13 @@ public class LevelLoader : MonoBehaviour
     }
 
     IEnumerator LoadLevel(string SceneName){
+        AudioSource soundEffect = GetComponent<AudioSource>();
+        if(soundEffect){
+            soundEffect.PlayDelayed(0.5f);
+        }
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(1);
+        
         SceneManager.LoadScene(SceneName);
 
     }

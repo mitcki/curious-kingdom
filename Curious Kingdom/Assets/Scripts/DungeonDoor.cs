@@ -8,7 +8,9 @@ using FTRuntime.Yields;
 public class DungeonDoor : MonoBehaviour
 {
     public static int gameLevel = 1;
+    float stomachGrowlTime = 15f;
     // Start is called before the first frame update
+    GameObject[] worms;
     void Start()
     {
         if(Music.player){
@@ -37,6 +39,10 @@ public class DungeonDoor : MonoBehaviour
             GameObject.Find("ketchup-2").SetActive(false);
             GameObject.Find("ketchup-3").SetActive(false);
         }
+        GameObject.Find("CameraClose").GetComponent<Camera>().enabled = true;
+
+        worms = GameObject.FindGameObjectsWithTag("Worm");
+
 
         StartCoroutine(StartAnimation());
         
@@ -52,7 +58,6 @@ public class DungeonDoor : MonoBehaviour
 
         GameObject.Find("king_torch").GetComponent<SpriteRenderer>().enabled = false;
 
-        GameObject.Find("CameraClose").GetComponent<Camera>().enabled = true;
 
         StartCoroutine(ZoomOut(4.9f));
         StartCoroutine(HideVignette(5.1f));
@@ -78,24 +83,37 @@ public class DungeonDoor : MonoBehaviour
         GameObject.Find("king_torch").GetComponent<SpriteRenderer>().enabled = true;
         GameObject kingTorch = GameObject.Find("KING_CASTLE-TORCH_SEQ20.fla.KING_CASTLE_TORCH_SEQ20");
         kingTorch.GetComponent<MeshRenderer>().enabled = false;
+        StartCoroutine(StomachGrowl(stomachGrowlTime));
+
+
+    }
+    IEnumerator StomachGrowl(float time){
+        yield return new WaitForSeconds(time);
+
+        GameObject.Find("king_torch").GetComponent<AudioSource>().Play();
+        StartCoroutine(HideVignette(0.15f));
+        StartCoroutine(ShowVignette(3.0f));
+
+        StartCoroutine(StomachGrowl(stomachGrowlTime));
 
     }
     IEnumerator HideVignette(float time)
     {
         yield return new WaitForSeconds(time);
-        // GameObject.Find("vignette").GetComponent<SpriteRenderer>().enabled = false;
-        // GameObject.Find("mask-frame").GetComponent<SpriteRenderer>().enabled = false;
+
+
+        foreach (GameObject worm in worms)
+        {
+            worm.GetComponent<Animator>().enabled = true;
+            worm.GetComponent<Animator>().Play("WormGlow", -1, 0f);
+        }
         StartCoroutine(FadeTo(GameObject.Find("vignette").GetComponent<SpriteRenderer>(), 0, 1));
-        StartCoroutine(FadeTo(GameObject.Find("mask-frame").GetComponent<SpriteRenderer>(), 0, 1));
 
     }
     IEnumerator ShowVignette(float time)
     {
         yield return new WaitForSeconds(time);
-        // GameObject.Find("vignette").GetComponent<SpriteRenderer>().enabled = true;
-        // GameObject.Find("mask-frame").GetComponent<SpriteRenderer>().enabled = true;
         StartCoroutine(FadeTo(GameObject.Find("vignette").GetComponent<SpriteRenderer>(), 1, 1));
-        StartCoroutine(FadeTo(GameObject.Find("mask-frame").GetComponent<SpriteRenderer>(), 1, 1));
 
 
     }
